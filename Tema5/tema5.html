@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 5: COBIT - Proyecto de Aula</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .topic-page-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+            min-height: 100vh;
+        }
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.75rem 1.5rem;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-bottom: 2rem;
+            transition: background 0.3s ease;
+        }
+        .back-button:hover {
+            background: #0056b3;
+        }
+        .back-button i {
+            margin-right: 0.5rem;
+        }
+        .topic-header {
+            background: linear-gradient(135deg, #fd7e14 0%, #ff9800 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .topic-header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.5rem;
+        }
+        .topic-header p {
+            margin: 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header común -->
+        <header class="header">
+            <div class="header-content">
+                <h1><i class="fas fa-graduation-cap"></i> Proyecto de Aula</h1>
+                <h2>Servicios de Tecnología de la Información</h2>
+                <p class="subtitle">Material complementario para el curso de Ingeniería Informática</p>
+            </div>
+        </header>
+
+        <div class="topic-page-container">
+        <a href="../index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            Volver al Proyecto de Aula
+        </a>
+
+        <div class="topic-header">
+            <h1><i class="fas fa-shield-alt"></i> COBIT</h1>
+            <p>Objetivos de Control para la Información y Tecnologías Relacionadas</p>
+        </div>
+
+        <div class="topic-page">
+            <!-- Conceptos Section -->
+            <section class="topic-section">
+                <div class="section-header">
+                    <i class="fas fa-lightbulb"></i>
+                    <h2>Conceptos Clave</h2>
+                </div>
+                <div class="section-content">
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-shield-alt"></i> COBIT: Control Objectives for Information and Related Technology</h3>
+                        <p><strong>Definición:</strong> Marco de trabajo para el gobierno y gestión de las tecnologías de la información desarrollado por ISACA (Information Systems Audit and Control Association).</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Origen y Evolución</h4>
+                                <ul>
+                                    <li><strong>1996:</strong> Primera edición como iniciativa de ISACA</li>
+                                    <li><strong>1998:</strong> Segunda edición</li>
+                                    <li><strong>2000:</strong> Tercera edición (online 2003)</li>
+                                    <li><strong>2005:</strong> Cuarta edición</li>
+                                    <li><strong>2007:</strong> Versión 4.1</li>
+                                    <li><strong>2012:</strong> COBIT 5 (última edición aceptada internacionalmente)</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Estructura de COBIT</h4>
+                                <ul>
+                                    <li><strong>34 procesos:</strong> Cubren todos los aspectos del gobierno y gestión de TI</li>
+                                    <li><strong>210 objetivos de control:</strong> Específicos y detallados</li>
+                                    <li><strong>4 dominios:</strong> Organización lógica de procesos</li>
+                                    <li><strong>Integración:</strong> Val IT, Risk IT, ITIL, normas ISO</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-building"></i> Misión de COBIT</h3>
+                        <p><strong>Propósito:</strong> Investigar, desarrollar, publicar y promover un conjunto actualizado de objetivos de control de las tecnologías de la información para facilitar su uso a gerentes, usuarios y auditores.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Beneficiarios</h4>
+                                <ul>
+                                    <li><strong>Gerencia:</strong> Promoción de inversión en TI y control de rendimiento</li>
+                                    <li><strong>Usuarios finales:</strong> Confianza en seguridad y control de productos</li>
+                                    <li><strong>Auditores:</strong> Guía para decisiones y recomendaciones sobre control de proyectos</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Características Diferenciadoras</h4>
+                                <ul>
+                                    <li>Aplicación estricta en buen gobierno corporativo</li>
+                                    <li>Control de seguridad en gestión de servicios de TI</li>
+                                    <li>Análisis de información para procesos de negocio</li>
+                                    <li>Gestión holística de recursos de TI</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-sitemap"></i> Los 4 Dominios de COBIT</h3>
+                        <p><strong>Estructura:</strong> COBIT organiza sus 34 procesos en 4 dominios principales que cubren el ciclo completo de gobierno y gestión de TI.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>1. Planificación y Organización (PO)</h4>
+                                <p><strong>Objetivo:</strong> Desarrollar cómo la tecnología de la información colabora en la consecución de objetivos generales de la organización.</p>
+                                <p><strong>Procesos:</strong> 10 procesos (PO1-PO10)</p>
+                                <p><strong>Enfoque:</strong> Análisis holístico desde diferentes perspectivas, definición de esquema organizacional e infraestructuras tecnológicas.</p>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>2. Adquisición e Implementación (AI)</h4>
+                                <p><strong>Objetivo:</strong> Identificar, desarrollar o adquirir e implementar las soluciones de TI necesarias.</p>
+                                <p><strong>Procesos:</strong> 6 procesos (AI1-AI6)</p>
+                                <p><strong>Enfoque:</strong> Identificación, desarrollo, adquisición e implementación de soluciones TI.</p>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>3. Entrega y Soporte (ES)</h4>
+                                <p><strong>Objetivo:</strong> Analizar servicios requeridos por la organización y establecer procesos de soporte necesarios.</p>
+                                <p><strong>Procesos:</strong> 13 procesos (ES1-ES13)</p>
+                                <p><strong>Enfoque:</strong> Formación, seguridad, aseguramiento de continuidad de negocio, provisión de servicios.</p>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>4. Supervisión y Evaluación (SE)</h4>
+                                <p><strong>Objetivo:</strong> Evaluar regularmente los procesos de la organización para verificar calidad, integridad y confidencialidad.</p>
+                                <p><strong>Procesos:</strong> 4 procesos (SE1-SE4)</p>
+                                <p><strong>Enfoque:</strong> Seguimiento de consecución de objetivos y garantía del buen estado evolutivo de la organización.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-list-ol"></i> Dominio: Planificación y Organización (PO)</h3>
+                        <p><strong>Descripción:</strong> Desarrolla la forma en que la tecnología de la información colabora en la consecución de objetivos generales de la organización.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Procesos del Dominio PO</h4>
+                                <ul>
+                                    <li><strong>PO1:</strong> Definición del Plan Estratégico</li>
+                                    <li><strong>PO2:</strong> Definición de la Arquitectura de Información</li>
+                                    <li><strong>PO3:</strong> Determinación de la Dirección Tecnológica</li>
+                                    <li><strong>PO4:</strong> Definición de la Organización y Relaciones de TI</li>
+                                    <li><strong>PO5:</strong> Manejo de la Inversión</li>
+                                    <li><strong>PO6:</strong> Comunicación de Objetivos de Dirección y aspiraciones de la gerencia</li>
+                                    <li><strong>PO7:</strong> Administración de Recursos Humanos</li>
+                                    <li><strong>PO8:</strong> Cumplimiento de requerimientos externos</li>
+                                    <li><strong>PO9:</strong> Evaluación de Riesgos</li>
+                                    <li><strong>PO10:</strong> Administración de Proyectos</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-tools"></i> Dominio: Adquisición e Implementación (AI)</h3>
+                        <p><strong>Descripción:</strong> Identificación, desarrollo o adquisición e implementación de las soluciones de TI necesarias para satisfacer las necesidades de la organización.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Procesos del Dominio AI</h4>
+                                <ul>
+                                    <li><strong>AI1:</strong> Identificación de Soluciones Automatizadas</li>
+                                    <li><strong>AI2:</strong> Adquisición y mantenimiento del software aplicativo</li>
+                                    <li><strong>AI3:</strong> Adquisición y mantenimiento de la infraestructura tecnológica</li>
+                                    <li><strong>AI4:</strong> Desarrollo y mantenimiento de procedimientos</li>
+                                    <li><strong>AI5:</strong> Instalación y aceptación de los sistemas</li>
+                                    <li><strong>AI6:</strong> Administración de los cambios</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-handshake"></i> Dominio: Entrega y Soporte (ES)</h3>
+                        <p><strong>Descripción:</strong> Análisis de servicios requeridos por la organización y establecimiento de procesos de soporte necesarios.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Procesos del Dominio ES</h4>
+                                <ul>
+                                    <li><strong>ES1:</strong> Definición de niveles de servicio</li>
+                                    <li><strong>ES2:</strong> Administración de servicios prestados por terceros</li>
+                                    <li><strong>ES3:</strong> Administración de desempeño de capacidad</li>
+                                    <li><strong>ES4:</strong> Aseguramiento continuo del servicio</li>
+                                    <li><strong>ES5:</strong> Garantizar la seguridad de los sistemas</li>
+                                    <li><strong>ES6:</strong> Formación y entrenamiento de usuarios</li>
+                                    <li><strong>ES7:</strong> Identificación y asignación de costos</li>
+                                    <li><strong>ES8:</strong> Apoyo y asistencia a clientes de TI</li>
+                                    <li><strong>ES9:</strong> Administración de la configuración</li>
+                                    <li><strong>ES10:</strong> Administración de problemas</li>
+                                    <li><strong>ES11:</strong> Administración de datos</li>
+                                    <li><strong>ES12:</strong> Administración de las instalaciones</li>
+                                    <li><strong>ES13:</strong> Administración de la operación</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-chart-line"></i> Dominio: Supervisión y Evaluación (SE)</h3>
+                        <p><strong>Descripción:</strong> Evaluación regular de los procesos de la organización para verificar su calidad, integridad y confidencialidad.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Procesos del Dominio SE</h4>
+                                <ul>
+                                    <li><strong>SE1:</strong> Supervisión del proceso</li>
+                                    <li><strong>SE2:</strong> Evaluación del control interno</li>
+                                    <li><strong>SE3:</strong> Obtención del aseguramiento independiente</li>
+                                    <li><strong>SE4:</strong> Proveer auditoría independiente</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-check-circle"></i> Aplicación de la Guía COBIT</h3>
+                        <p><strong>Descripción:</strong> A través del proceso de auditoría que promueve ISACA se realiza la comprobación en cualquier organización de la consecución de objetivos dentro del buen gobierno corporativo.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Casos de Aplicación</h4>
+                                <ul>
+                                    <li><strong>Auditoría de procesos:</strong> Análisis de procesos específicos como Administración de Recursos Humanos</li>
+                                    <li><strong>Evaluación de gobierno corporativo:</strong> Verificación de cumplimiento de objetivos</li>
+                                    <li><strong>Mejora continua:</strong> Identificación de áreas de mejora en gestión de TI</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Ejemplo de Aplicación</h4>
+                                <p><strong>Caso:</strong> Auditoría de aplicación de la guía COBIT para analizar el proceso de Administración de Recursos Humanos en un colegio privado bilingüe (Español-Inglés) que brinda servicio de educación a niños de preescolar y primaria.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ejemplos Section -->
+            <section class="topic-section">
+                <div class="section-header">
+                    <i class="fas fa-flask"></i>
+                    <h2>Ejemplos Prácticos</h2>
+                </div>
+                <div class="section-content">
+                    <div class="example-section">
+                        <h3>Casos de Implementación COBIT</h3>
+                        <div class="example-grid">
+                            <div class="example-item">
+                                <i class="fas fa-star"></i>
+                                <span>Bancos: Control de seguridad y cumplimiento regulatorio</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-star"></i>
+                                <span>Empresas manufactureras: Gestión de proyectos de TI</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-star"></i>
+                                <span>Organizaciones públicas: Auditoría de procesos de TI</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-star"></i>
+                                <span>Colegios privados: Administración de Recursos Humanos</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example-section">
+                        <h3>Dominios en Acción</h3>
+                        <div class="example-grid">
+                            <div class="example-item">
+                                <i class="fas fa-star"></i>
+                                <span>PO: Definición de plan estratégico de TI</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-star"></i>
+                                <span>AI: Adquisición de software empresarial</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-star"></i>
+                                <span>ES: Gestión de niveles de servicio y soporte</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-star"></i>
+                                <span>SE: Auditoría independiente de procesos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Actividades Section -->
+            <section class="topic-section">
+                <div class="section-header">
+                    <i class="fas fa-tasks"></i>
+                    <h2>Actividades de Refuerzo</h2>
+                </div>
+                <div class="section-content">
+                    <div class="activity-section">
+                        <div class="activity-header">
+                            <h3>Caso de Uso: Empresa de Logística y Distribución (45 min)</h3>
+                            <div class="activity-meta">
+                                <span class="duration"><i class="fas fa-clock"></i> Duración estimada</span>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-objective">
+                                <h4><i class="fas fa-target"></i> Objetivo</h4>
+                                <p>Aplicar COBIT para identificar dominios relevantes y analizar procesos específicos en un caso real de empresa, comprendiendo cómo se implementan estos marcos en la práctica.</p>
+                            </div>
+                            
+                            <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; border-left: 4px solid #fd7e14;">
+                                <h4 style="color: #fd7e14; margin-bottom: 1rem;"><i class="fas fa-building"></i> Contexto de la Empresa</h4>
+                                <p><strong>Nombre:</strong> Logística Rápida S.A.</p>
+                                <p><strong>Sector:</strong> Transporte y distribución de productos perecederos</p>
+                                <p><strong>Tamaño:</strong> Mediana empresa con 150 empleados</p>
+                                <p><strong>Ubicación:</strong> Colombia, con operaciones en 5 ciudades principales</p>
+                                
+                                <h5 style="margin-top: 1.5rem; margin-bottom: 0.75rem; color: #495057;">Situación Actual:</h5>
+                                <ul style="margin-left: 1.5rem; line-height: 1.8;">
+                                    <li>La empresa ha experimentado un crecimiento del 40% en los últimos 2 años</li>
+                                    <li>Actualmente utiliza sistemas de TI dispersos y no integrados</li>
+                                    <li>Problemas frecuentes con la gestión de inventarios y rutas de distribución</li>
+                                    <li>Falta de visibilidad en tiempo real de las operaciones</li>
+                                    <li>Procesos manuales que generan errores y retrasos</li>
+                                    <li>Dificultades para cumplir con tiempos de entrega comprometidos</li>
+                                    <li>Preocupaciones de seguridad informática debido a incidentes recientes</li>
+                                    <li>Necesidad de mejorar la toma de decisiones estratégicas basadas en datos</li>
+                                </ul>
+                                
+                                <h5 style="margin-top: 1.5rem; margin-bottom: 0.75rem; color: #495057;">Objetivos de la Empresa:</h5>
+                                <ul style="margin-left: 1.5rem; line-height: 1.8;">
+                                    <li>Implementar un sistema ERP integrado para mejorar la gestión operativa</li>
+                                    <li>Mejorar la seguridad de los sistemas de información</li>
+                                    <li>Optimizar los procesos de logística y distribución</li>
+                                    <li>Reducir costos operativos en un 15%</li>
+                                    <li>Mejorar la satisfacción del cliente con entregas más rápidas y precisas</li>
+                                    <li>Establecer controles adecuados para el gobierno de TI</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="background: #e3f2fd; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; border-left: 4px solid #2196f3;">
+                                <h4 style="color: #1976d2; margin-bottom: 1rem;"><i class="fas fa-sitemap"></i> Parte 1: Identificación de Dominios COBIT</h4>
+                                
+                                <h5 style="margin-top: 1rem; margin-bottom: 0.75rem; color: #1976d2;">Solución Detallada:</h5>
+                                
+                                <div style="margin-bottom: 1.5rem;">
+                                    <h6 style="color: #495057; font-weight: 600; margin-bottom: 0.5rem;">1. Dominio: Planificación y Organización (PO)</h6>
+                                    <p style="margin-bottom: 0.75rem;"><strong>Procesos Relevantes:</strong></p>
+                                    <ul style="margin-left: 1.5rem; line-height: 1.8; margin-bottom: 1rem;">
+                                        <li><strong>PO1 - Definición del Plan Estratégico:</strong> Necesario para alinear la estrategia de TI con los objetivos de crecimiento y optimización de la empresa</li>
+                                        <li><strong>PO2 - Definición de la Arquitectura de Información:</strong> Requerido para diseñar la arquitectura que soporte el ERP integrado y los sistemas de logística</li>
+                                        <li><strong>PO5 - Manejo de la Inversión:</strong> Esencial para evaluar y justificar la inversión en el ERP y sistemas de seguridad</li>
+                                        <li><strong>PO9 - Evaluación de Riesgos:</strong> Crítico para identificar y mitigar riesgos de seguridad y operacionales</li>
+                                        <li><strong>PO10 - Administración de Proyectos:</strong> Necesario para gestionar la implementación del ERP y otros proyectos de TI</li>
+                                    </ul>
+                                    <p style="background: white; padding: 0.75rem; border-radius: 4px; font-style: italic;"><strong>Justificación:</strong> Este dominio es fundamental porque la empresa necesita planificar estratégicamente su transformación digital, definir cómo integrará los nuevos sistemas, evaluar riesgos y gestionar adecuadamente las inversiones y proyectos.</p>
+                                </div>
+                                
+                                <div style="margin-bottom: 1.5rem;">
+                                    <h6 style="color: #495057; font-weight: 600; margin-bottom: 0.5rem;">2. Dominio: Adquisición e Implementación (AI)</h6>
+                                    <p style="margin-bottom: 0.75rem;"><strong>Procesos Relevantes:</strong></p>
+                                    <ul style="margin-left: 1.5rem; line-height: 1.8; margin-bottom: 1rem;">
+                                        <li><strong>AI1 - Identificación de Soluciones Automatizadas:</strong> Para identificar y evaluar las mejores soluciones ERP para el sector logístico</li>
+                                        <li><strong>AI2 - Adquisición y mantenimiento del software aplicativo:</strong> Para adquirir el ERP, sistemas de gestión de rutas y software de seguridad</li>
+                                        <li><strong>AI3 - Adquisición y mantenimiento de la infraestructura tecnológica:</strong> Para adquirir servidores, redes y equipos necesarios para soportar los nuevos sistemas</li>
+                                        <li><strong>AI5 - Instalación y aceptación de los sistemas:</strong> Para instalar y validar que los sistemas funcionen correctamente antes de ponerlos en producción</li>
+                                        <li><strong>AI6 - Administración de los cambios:</strong> Para gestionar los cambios técnicos y organizacionales durante la implementación</li>
+                                    </ul>
+                                    <p style="background: white; padding: 0.75rem; border-radius: 4px; font-style: italic;"><strong>Justificación:</strong> Este dominio es crítico porque la empresa necesita adquirir, implementar e integrar nuevos sistemas tecnológicos. La gestión adecuada de estos procesos asegura una transición exitosa.</p>
+                                </div>
+                                
+                                <div style="margin-bottom: 1.5rem;">
+                                    <h6 style="color: #495057; font-weight: 600; margin-bottom: 0.5rem;">3. Dominio: Entrega y Soporte (ES)</h6>
+                                    <p style="margin-bottom: 0.75rem;"><strong>Procesos Relevantes:</strong></p>
+                                    <ul style="margin-left: 1.5rem; line-height: 1.8; margin-bottom: 1rem;">
+                                        <li><strong>ES1 - Definición de niveles de servicio:</strong> Para establecer SLAs claros para los sistemas de logística y distribución</li>
+                                        <li><strong>ES5 - Garantizar la seguridad de los sistemas:</strong> Prioridad máxima debido a los incidentes de seguridad recientes</li>
+                                        <li><strong>ES6 - Formación y entrenamiento de usuarios:</strong> Para capacitar al personal en el uso del nuevo ERP y sistemas</li>
+                                        <li><strong>ES8 - Apoyo y asistencia a clientes de TI:</strong> Para proporcionar soporte técnico a los usuarios internos</li>
+                                        <li><strong>ES10 - Administración de problemas:</strong> Para gestionar y resolver problemas técnicos rápidamente</li>
+                                        <li><strong>ES13 - Administración de la operación:</strong> Para asegurar que los sistemas funcionen de manera continua y eficiente</li>
+                                    </ul>
+                                    <p style="background: white; padding: 0.75rem; border-radius: 4px; font-style: italic;"><strong>Justificación:</strong> Este dominio es esencial para garantizar que los sistemas funcionen correctamente, sean seguros y proporcionen el soporte necesario a los usuarios. Especialmente importante para operaciones críticas de logística.</p>
+                                </div>
+                                
+                                <div style="margin-bottom: 1rem;">
+                                    <h6 style="color: #495057; font-weight: 600; margin-bottom: 0.5rem;">4. Dominio: Supervisión y Evaluación (SE)</h6>
+                                    <p style="margin-bottom: 0.75rem;"><strong>Procesos Relevantes:</strong></p>
+                                    <ul style="margin-left: 1.5rem; line-height: 1.8; margin-bottom: 1rem;">
+                                        <li><strong>SE1 - Supervisión del proceso:</strong> Para monitorear continuamente el desempeño de los procesos de TI</li>
+                                        <li><strong>SE2 - Evaluación del control interno:</strong> Para evaluar la efectividad de los controles implementados</li>
+                                        <li><strong>SE4 - Proveer auditoría independiente:</strong> Para realizar auditorías periódicas de seguridad y cumplimiento</li>
+                                    </ul>
+                                    <p style="background: white; padding: 0.75rem; border-radius: 4px; font-style: italic;"><strong>Justificación:</strong> Este dominio es necesario para asegurar que los procesos de TI funcionen correctamente y cumplan con los objetivos establecidos. La supervisión continua permite identificar problemas tempranamente.</p>
+                                </div>
+                                
+                                <div style="background: #fff3cd; padding: 1rem; border-radius: 6px; margin-top: 1.5rem;">
+                                    <h6 style="color: #856404; margin-bottom: 0.75rem;"><strong>Resumen de Dominios Priorizados:</strong></h6>
+                                    <p style="margin-bottom: 0.5rem;"><strong>Alta Prioridad:</strong> PO (Planificación estratégica), AI (Implementación de sistemas), ES (Seguridad y soporte)</p>
+                                    <p style="margin: 0;"><strong>Prioridad Media:</strong> SE (Supervisión y evaluación)</p>
+                                </div>
+                            </div>
+                            
+                            <div style="background: #d4edda; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; border-left: 4px solid #28a745;">
+                                <h4 style="color: #155724; margin-bottom: 1rem;"><i class="fas fa-clipboard-check"></i> Parte 2: Análisis de Proceso COBIT</h4>
+                                <p style="margin-bottom: 1rem;"><strong>Proceso Seleccionado:</strong> PO9 - Evaluación de Riesgos</p>
+                                <p style="margin-bottom: 1rem;"><strong>Justificación de la Selección:</strong> Este proceso es crítico debido a los incidentes de seguridad recientes y la necesidad de evaluar riesgos antes de implementar el ERP y otros sistemas.</p>
+                                
+                                <h5 style="margin-top: 1.5rem; margin-bottom: 0.75rem; color: #155724;">Análisis Detallado del Proceso PO9:</h5>
+                                
+                                <div style="margin-bottom: 1.5rem;">
+                                    <h6 style="color: #495057; font-weight: 600; margin-bottom: 0.5rem;">1. Objetivo del Proceso</h6>
+                                    <p style="margin-bottom: 0.75rem;">Identificar, evaluar y gestionar los riesgos asociados con las tecnologías de información para minimizar su impacto en los objetivos de negocio.</p>
+                                </div>
+                                
+                                <div style="margin-bottom: 1.5rem;">
+                                    <h6 style="color: #495057; font-weight: 600; margin-bottom: 0.5rem;">2. Objetivos de Control Relevantes</h6>
+                                    <ul style="margin-left: 1.5rem; line-height: 1.8;">
+                                        <li><strong>PO9.1 - Identificación de Riesgos:</strong> Identificar sistemáticamente todos los riesgos relacionados con TI</li>
+                                        <li><strong>PO9.2 - Evaluación de Riesgos:</strong> Evaluar la probabilidad e impacto de cada riesgo identificado</li>
+                                        <li><strong>PO9.3 - Estrategias de Mitigación:</strong> Desarrollar estrategias para mitigar o eliminar riesgos</li>
+                                        <li><strong>PO9.4 - Plan de Contingencia:</strong> Desarrollar planes de contingencia para riesgos críticos</li>
+                                        <li><strong>PO9.5 - Monitoreo Continuo:</strong> Monitorear continuamente los riesgos y actualizar las evaluaciones</li>
+                                    </ul>
+                                </div>
+                                
+                                <div style="margin-bottom: 1.5rem;">
+                                    <h6 style="color: #495057; font-weight: 600; margin-bottom: 0.5rem;">3. Aplicación en Logística Rápida S.A.</h6>
+                                    
+                                    <h6 style="color: #495057; font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem;">3.1 Identificación de Riesgos (PO9.1):</h6>
+                                    <ul style="margin-left: 1.5rem; line-height: 1.8; margin-bottom: 1rem;">
+                                        <li><strong>Riesgo de Seguridad:</strong> Posibles ataques cibernéticos, acceso no autorizado a datos de clientes y rutas</li>
+                                        <li><strong>Riesgo Operacional:</strong> Fallos en sistemas críticos durante la implementación del ERP que afecten operaciones</li>
+                                        <li><strong>Riesgo de Integración:</strong> Dificultades para integrar el nuevo ERP con sistemas existentes</li>
+                                        <li><strong>Riesgo de Datos:</strong> Pérdida o corrupción de datos durante la migración</li>
+                                        <li><strong>Riesgo de Recursos Humanos:</strong> Resistencia al cambio y falta de capacitación adecuada</li>
+                                        <li><strong>Riesgo de Cumplimiento:</strong> No cumplir con regulaciones de protección de datos y seguridad</li>
+                                        <li><strong>Riesgo Financiero:</strong> Sobrecostos en la implementación del proyecto</li>
+                                    </ul>
+                                    
+                                    <h6 style="color: #495057; font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem;">3.2 Evaluación de Riesgos (PO9.2):</h6>
+                                    <div style="background: white; padding: 1rem; border-radius: 4px; margin-bottom: 1rem;">
+                                        <table style="width: 100%; border-collapse: collapse;">
+                                            <thead>
+                                                <tr style="background: #f8f9fa;">
+                                                    <th style="padding: 0.5rem; border: 1px solid #dee2e6; text-align: left;">Riesgo</th>
+                                                    <th style="padding: 0.5rem; border: 1px solid #dee2e6; text-align: center;">Probabilidad</th>
+                                                    <th style="padding: 0.5rem; border: 1px solid #dee2e6; text-align: center;">Impacto</th>
+                                                    <th style="padding: 0.5rem; border: 1px solid #dee2e6; text-align: center;">Nivel</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td style="padding: 0.5rem; border: 1px solid #dee2e6;">Ataques cibernéticos</td>
+                                                    <td style="padding: 0.5rem; border: 1px solid #dee2e6; text-align: center;">Alta</td>
+                                                    <td style="padding: 0.5rem; border: 1px solid #dee2e6; text-align: center;">Crítico</td>
+                                                    <td style="padding: 0.5rem; border: 1px solid #dee2e6; text-align: center; background: #f8d7da; color: #721c24; font-weight: bold;">ALTO</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 0.5rem; border: 1px solid #dee2e6;">Fallos durante implementación ERP</td>
+                                                    <td style="padding: 0.5rem; border: 1px solid #dee2e6; text-align: center;">Media</td>
+                                                    <td style="padding: 0.5rem; border: 1px solid #dee2e6; text-align: center;">Alto</td>
+                                                    <td style="padding: 0.5rem; border: 1px solid #dee2e6; text-align: center; background: #fff3cd; color: #856404; font-weight: bold;">MEDIO</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 0.5rem; border: 1px solid #dee2e6;">Pérdida de datos en migración</td>
+                                                    <td style="padding: 0.5rem; border: 1px solid #dee2e6; text-align: center;">Baja</td>
+                                                    <td style="padding: 0.5rem; border: 1px solid #dee2e6; text-align: center;">Crítico</td>
+                                                    <td style="padding: 0.5rem; border: 1px solid #dee2e6; text-align: center; background: #fff3cd; color: #856404; font-weight: bold;">MEDIO</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 0.5rem; border: 1px solid #dee2e6;">Resistencia al cambio</td>
+                                                    <td style="padding: 0.5rem; border: 1px solid #dee2e6; text-align: center;">Alta</td>
+                                                    <td style="padding: 0.5rem; border: 1px solid #dee2e6; text-align: center;">Medio</td>
+                                                    <td style="padding: 0.5rem; border: 1px solid #dee2e6; text-align: center; background: #fff3cd; color: #856404; font-weight: bold;">MEDIO</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 0.5rem; border: 1px solid #dee2e6;">Sobrecostos del proyecto</td>
+                                                    <td style="padding: 0.5rem; border: 1px solid #dee2e6; text-align: center;">Media</td>
+                                                    <td style="padding: 0.5rem; border: 1px solid #dee2e6; text-align: center;">Medio</td>
+                                                    <td style="padding: 0.5rem; border: 1px solid #dee2e6; text-align: center; background: #d1ecf1; color: #0c5460; font-weight: bold;">BAJO</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                    <h6 style="color: #495057; font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem;">3.3 Estrategias de Mitigación (PO9.3):</h6>
+                                    <ul style="margin-left: 1.5rem; line-height: 1.8; margin-bottom: 1rem;">
+                                        <li><strong>Para Ataques Cibernéticos (Riesgo ALTO):</strong>
+                                            <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                                                <li>Implementar firewall de próxima generación y sistemas de detección de intrusiones</li>
+                                                <li>Establecer políticas de acceso y autenticación multifactor</li>
+                                                <li>Realizar auditorías de seguridad trimestrales</li>
+                                                <li>Capacitar al personal en seguridad informática</li>
+                                                <li>Implementar backup y recuperación ante desastres</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Para Fallos en Implementación ERP (Riesgo MEDIO):</strong>
+                                            <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                                                <li>Realizar pruebas exhaustivas en ambiente de pruebas antes de producción</li>
+                                                <li>Implementar en fases (pilotaje en una ubicación primero)</li>
+                                                <li>Mantener sistemas legacy operativos durante transición</li>
+                                                <li>Contratar consultoría especializada</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Para Pérdida de Datos (Riesgo MEDIO):</strong>
+                                            <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                                                <li>Realizar backups completos antes de migración</li>
+                                                <li>Validar integridad de datos después de migración</li>
+                                                <li>Mantener copias de seguridad en múltiples ubicaciones</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Para Resistencia al Cambio (Riesgo MEDIO):</strong>
+                                            <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                                                <li>Programa de comunicación y cambio organizacional</li>
+                                                <li>Capacitación extensiva y soporte durante transición</li>
+                                                <li>Involucrar a usuarios clave en el proceso de implementación</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                    <h6 style="color: #495057; font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem;">3.4 Plan de Contingencia (PO9.4):</h6>
+                                    <ul style="margin-left: 1.5rem; line-height: 1.8; margin-bottom: 1rem;">
+                                        <li><strong>Incidente de Seguridad:</strong> Activar equipo de respuesta a incidentes, aislar sistemas afectados, notificar a autoridades si es necesario</li>
+                                        <li><strong>Fallos en ERP:</strong> Revertir a sistemas legacy, activar equipo de soporte técnico, comunicar a usuarios afectados</li>
+                                        <li><strong>Pérdida de Datos:</strong> Restaurar desde backups, validar integridad, notificar a partes afectadas</li>
+                                    </ul>
+                                    
+                                    <h6 style="color: #495057; font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem;">3.5 Monitoreo Continuo (PO9.5):</h6>
+                                    <ul style="margin-left: 1.5rem; line-height: 1.8; margin-bottom: 1rem;">
+                                        <li>Revisión mensual de la matriz de riesgos</li>
+                                        <li>Actualización trimestral de evaluaciones de riesgo</li>
+                                        <li>Reportes de seguridad semanales</li>
+                                        <li>Auditorías semestrales de controles de seguridad</li>
+                                    </ul>
+                                </div>
+                                
+                                <div style="background: white; padding: 1rem; border-radius: 4px; margin-top: 1.5rem;">
+                                    <h6 style="color: #495057; font-weight: 600; margin-bottom: 0.75rem;">Impacto Esperado de la Implementación del Proceso PO9:</h6>
+                                    <ul style="margin-left: 1.5rem; line-height: 1.8;">
+                                        <li>Reducción del 60% en incidentes de seguridad</li>
+                                        <li>Mejora del 40% en tiempos de respuesta a incidentes</li>
+                                        <li>Reducción del 30% en fallos durante implementación de proyectos</li>
+                                        <li>Mejora en la confianza de stakeholders</li>
+                                        <li>Cumplimiento de regulaciones de seguridad</li>
+                                        <li>Mejora en la toma de decisiones basada en evaluación de riesgos</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div style="background: #e7f3ff; padding: 1.5rem; border-radius: 8px; margin-top: 1.5rem; border-left: 4px solid #0056b3;">
+                                <h4 style="color: #0056b3; margin-bottom: 1rem;"><i class="fas fa-lightbulb"></i> Conclusiones del Caso de Uso</h4>
+                                <p style="margin-bottom: 1rem;">Este caso de uso demuestra cómo COBIT proporciona un marco estructurado para:</p>
+                                <ul style="margin-left: 1.5rem; line-height: 1.8;">
+                                    <li><strong>Identificar dominios relevantes</strong> basándose en las necesidades específicas de la organización</li>
+                                    <li><strong>Priorizar procesos</strong> según la criticidad y objetivos de negocio</li>
+                                    <li><strong>Aplicar procesos específicos</strong> con objetivos de control claros y medibles</li>
+                                    <li><strong>Desarrollar estrategias de mitigación</strong> para riesgos identificados</li>
+                                    <li><strong>Establecer monitoreo continuo</strong> para asegurar la efectividad de los controles</li>
+                                </ul>
+                                <p style="margin-top: 1rem; font-style: italic;">La aplicación sistemática de COBIT permite a las organizaciones mejorar su gobierno y gestión de TI de manera estructurada y medible, alineando los procesos de TI con los objetivos de negocio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
+

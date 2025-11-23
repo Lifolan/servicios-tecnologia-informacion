@@ -1,0 +1,286 @@
+﻿El sistema de gestión de servicios
+
+Principios básicos de UNE-ISO/IEC 20000-1
+
+La estructura de la serie de normas ISO/IEC 20000 
+Requisitos del Sistema de Gestión del Servicio (SGS)  Diseño y transición de servicios nuevos o modificados  Procesos de provisión del servicio
+Grupos de procesos
+
+
+
+
+
+
+
+
+
+Ideas clave	
+
+7. 1. ¿Cómo estudiar este tema?
+
+
+
+La misión esencial de las TI dentro de la organización es la de proveer de servicios que faciliten su labor a las áreas que integran la organización. Si los servicios de TI que presta la organización son inestables, lentos o inexistentes no sirve de nada el modelo de gestión que se implante. Será el área de operaciones de TI la encargada de proporcionar unos servicios de calidad acordes con las necesidades de la organización. Uno de los marcos principales en el que se establecen las buenas prácticas para la gestión de los servicios de TI ha sido tratado en el capítulo anterior con la descripción de la Information Technology Infrastructure Library (ITIL).
+
+Con acuerdo internacional, La International Standard Organization (ISO) publicó la norma ISO/IEC 20000-1:2005, la cual fue traducida en el 2007 por AENOR mediante la publicación de la UNE-ISO/IEC 20000-1:2007 Tecnología de la información. Gestión del servicio. Part I. Especificaciones. Esta norma representa el consenso de las naciones en la forma de gestionar los servicios de las TI.
+
+Este tema lo desarrollaremos en los siguientes apartados:
+
+» Principios básicos de UNE-ISO/IEC 20000-1.
+» La estructura de la serie de normas ISO/IEC 20000.
+» Requisitos del Sistema de Gestión del Servicio (SGS).
+» Diseño y transición de servicios nuevos o modificados.
+» Procesos de provisión del servicio.
+» Grupos de procesos.
+
+7.2. Principios básicos de UNE-ISO/IEC 20000-1
+
+Podemos decir que la serie de normas ISO/IEC 20000 ha refrendado a nivel internacional el catálogo de buenas prácticas ITIL.
+
+La existencia de una norma de carácter internacional permite asegurar un consenso en cuanto a la regulación en los servicios de TI. Por otro lado, la aceptación de la norma de forma colectiva asegura la implantación de un estándar certificable. Esto último implica la acreditación del sistema de gestión de TI en las organizaciones confiriendo un plus de confiabilidad dentro del mercado o sector donde se esté operando.
+
+Esta norma facilita la resolución y gestión de problemáticas como:
+
+
+» Resolución rápida de incidentes en el servicio.
+» Mejora progresiva de problemas ocultos tanto en hardware como en software.
+» Conocimiento preciso con vistas al diagnóstico de problemas y generación de soluciones, de la configuración de los servicios y componentes.
+» Realización de cambios de forma segura y eficiente.
+» Comprensión adecuada de las necesidades del cliente.
+» Identificación y control de costes para optimización de la organización.
+» Mejora en la provisión de nuevos servicios.
+» Garantía de funcionamiento de los servicios críticos en situaciones adversas.
+» Control del soporte externo.
+
+Es importante destacar que la transformación de un departamento tradicional o conservador en una organización dialogante con capacidad de satisfacer el cumplimiento de sus compromisos se realiza con base en principios tales como el servicio, el cliente, la comunicación interna y los procesos internos.
+
+
+7.3. La estructura de la serie de normas ISO/IEC 20000
+
+Esta serie de normas se creó dentro de ISO/IEC dentro del grupo de trabajo 25 el cual está compuesto por organismos de normalización de más de cuarenta países. AENOR es el organismo español que nos representa en este foro.
+
+De las reuniones de del grupo de trabajo partió la iniciativa de crear la siguiente familia de normas dentro de la serie 20000 con el objetivo de evitar riesgos a las compañías proveedoras de servicios de TI a la hora de adoptar la norma.
+
+Así se creó la familia:
+
+» ISO/IEC 20000-1. Gestión del servicio TI.
+» ISO/IEC 20000-2. Código de buenas prácticas.
+» ISO/IEC TR 20000-3. Apoyo a la definición del alcance y aplicabilidad.
+
+Con la idea de evaluar la implantación de las anteriores normas se crearon las siguientes:
+
+» ISO/IEC TR 20000-8. Modelo de valoración de gestión del servicio.
+» ISO/IEC TR 20000-4. Modelo de referencia de procesos.
+
+
+A partir de la evaluación se podría obtener una certificación directa de la implantación de la norma o recurrir a una adopción incremental mediante la aplicación paulatina de los niveles establecidos por la ISO/IEC 20000-5.
+
+Nos encontramos realmente ante una serie de normas cuya intención es la de cubrir de manera integral las necesidades de gestión del servicio de TI.
+
+
+7.4. Requisitos del Sistema de Gestión del Servicio (SGS)
+
+La mayor contribución de esta la norma ISO/IEC 20000 es el sistema gestión de las TI. La entrada a este sistema de gestión sería el conjunto de requisitos del servicio impuesto por los clientes o partes interesadas mientras que la salida sería los propios servicios ya configurados para satisfacer las necesidades de los clientes.
+
+El sistema de gestión agrupa las actividades para la configuración de servicios útiles que satisfagan las necesidades de negocio en cinco procesos:
+
+» Diseño y transición de servicios nuevos o modificados.
+» Procesos de provisión del servicio.
+» Procesos de control.
+» Procesos de resolución.
+» Procesos de relación.
+
+El objetivo desde el punto de vista de la organización pasa por la definición del sistema de gestión de servicios, su implantación y su mejora.
+El Taylorismo y los métodos de fabricación en masa han sido las fuentes de inspiración de los departamentos de TI intentando aplicar el éxito obtenido en los procesos industriales a la generación de servicios de TI.
+
+Es imprescindible la implicación de la alta dirección de la organización ya que sin ella sería imposible aplicar un cambio que revolucione la forma de trabajar de toda la organización en torno a procesos apoyados por servicios de TI.
+
+
+7.5. Diseño y transición de servicios nuevos o modificados
+
+La innovación continua es la única forma de mantenerse alineado y en ritmo con el mercado. Toda organización que pretenda tener éxito en su negocio necesita coordinar la creación de productos y servicios según la variable demanda del mercado.
+
+Por tal motivo, el diseño y transición de servicios nuevos o modificados ha de moverse acorde con la creación y evolución de servicios de negocio. Esto permite unir estrechamente dos áreas que suelen ir separadas: el desarrollo software y la producción o explotación de servicios.
+
+En consecuencia, el proceso de diseño y transición de servicios nuevos o modificados tiene la misión de garantizar que los servicios de TI se puedan crear y entregar con la funcionalidad, costes y plazos acordados con los clientes.
+
+Los principales beneficios que se obtienen con este proceso son:
+
+
+» Los servicios de TI se diseñan para satisfacer necesidades del cliente.
+» Las expectativas del servicio solicitado son claras y consistentes.
+» Las demandas del negocio son atendidas como servicios.
+» Ayuda a la gestión formalizada de los requisitos del cliente.
+» Control del ciclo completo de diseño y transición de servicios.
+» Aseguramiento de la calidad del servicio.
+» Mejora de los plazos de entrega.
+» Gestión de costes del proyecto en concordancia con lo estipulado con el cliente.
+» Control del servicio en relación con las políticas y estándares de la organización.
+
+
+
+7.6. Procesos de provisión del servicio
+
+Este proceso tiene como misión la regulación de las actividades necesarias para que los servicios cumplan los requerimientos pactados con el cliente, cobrando una especial relevancia la provisión eficiente de servicios de TI de calidad, los cuales han de estar alineados con los objetivos del negocio.
+
+Para cubrir este aspecto, la norma establece seis procesos que han de desarrollarse:
+
+» Proceso de gestión del nivel de servicio.
+» Proceso de generación de informes del servicio.
+» Proceso de la continuidad y disponibilidad del servicio.
+» Proceso de elaboración del presupuesto y contabilidad de los servicios.
+» Proceso de gestión de la capacidad.
+» Proceso de gestión de la seguridad de la información.
+
+
+
+7.7. Grupos de procesos
+
+Para concluir la descripción de los procesos que establece la norma UNE/ISO/IEC 20000-1 a continuación se relacionan de manera esquemática:
+
+» Procesos de control.
+» Procesos de entrega.
+» Procesos de resolución.
+» Procesos de relación.
+
+
+Es preciso tener en cuenta que la norma no abarca la totalidad de la actividad de TI, sino que se centra en la propia gestión de los servicios. En resumen no son unas normas de carácter tecnológico sino de gestión que permiten identificar los roles y los procesos para conseguir el funcionamiento adecuado de los servicios de TI.
+
+Será preciso recurrir a otras normas para controlar la gestión de otras áreas intrínsecamente relacionadas con la TI, tales como la seguridad, el desarrollo, localidad, etc.
+
+Las organizaciones que adoptan la norma ISO/IEC 20000 junto con las recomendaciones ITIL consiguen mejoras sustanciales en la reducción de las incidencias, así como en la estabilidad y disponibilidad de los servicios.
+
+
+Lo + recomendado	
+
+Lecciones magistrales
+
+Metodologías, métodos y normas
+
+
+El uso de metodologías está muy extendido dentro del campo de la ingeniería y en especial la ingeniería informática. El beneficio de su uso es doble, por un lado permite acometer actividades sin tener experiencia previa en ello y por otro reporta calidad intrínseca con el propio seguimiento de la metodología.
+
+En la clase magistral el Profesor Castillo profundiza en las diferencias que existen entre las metodologías, los métodos, las técnicas, las guías de buenas prácticas y las normas.
+
+
+
+
+No dejes de leer…
+
+Los niveles de servicio en la ingeniería del software
+
+
+
+En este trabajo se presentan los principales aspectos relacionados con los ANS (Acuerdos de Nivel de Servicio) y con la GNS (Gestión de Nivel de Servicio), con un tratamiento global de los mismos, a los efectos de facilitar la comprensión de los beneficios que se lograrían con su implementación en una organización considerando las relaciones internas de la misma y también sus vinculaciones externas.
+
+
+
+No dejes de ver…
+
+ISO 20000
+
+
+Marlon Molina, director de Tecnofor y especialista en Gestión de TI, habla sobre la norma ISO 20000 y el esquema de certificación de ISO 20000.
+
+
+
+
++ Información	
+
+A fondo
+
+Los procesos de negocio y las tecnologías de la información
+
+
+
+Lee detalladamente las páginas 37 a 65 del capítulo «Los procesos de negocio y las tecnologías de la información» del libro. El capítulo explica cómo el uso y arquitectura de las tecnologías de la información deben de adaptarse a las exigencias de cualquier organización o empresa. Por ese motivo es preciso generar modelos de buenas prácticas para la gestión adecuada de los Servicio de TI.
+
+
+
+Bibliografía
+
+Berenguer, J. M. y Ramos, J. A. (2003). Negocios digitales: competir usando tecnologías de información. Pamplona: Eunsa.
+
+Berumen, S. y Arriaza, K. (2008). Evolución y desarrollo de las TIC en la economía del conocimiento. Madrid: Ecobook, Editorial del Economista.
+
+Test	
+
+
+1. Si los servicios de TI que presta la organización son inestables, lentos o inexistentes:
+A. La aplicación de la norma mejora su rendimiento sustancialmente.
+B. Es el resultado de la falta de implicación de la alta dirección.
+C. Es debido a una falta de aplicación del principio de innovación continua.
+D. No sirve de nada el modelo de gestión que se implante.
+
+2. La norma ISO/IEC 20000-1:2005:
+A. Proporciona un catálogo de buenas prácticas en la gestión de servicios TI.
+B. Regula la calidad del desarrollo de software.
+C. Regula el control de la calidad de los servicio de TI.
+D. Regula el sistema de gestión de servicios de TI.
+
+
+3. Podemos decir que:
+A. La serie de normas ISO/IEC 20000 ha refrendado a nivel internacional el catálogo de buenas prácticas COBIT.
+B. El catálogo de buenas prácticas ITIL ha refrendado la serie de normas ISO/IEC 20000.
+C. La serie de normas ISO/IEC 20000 ha refrendado a nivel internacional el catálogo de buenas prácticas ITIL.
+D. La norma ISO/IEC 20000-1:2007 aporta un valor añadido a la de la edición 2005.
+
+4. Esta norma facilita la resolución y gestión de problemáticas como:
+A. Resolución rápida de incidentes en el servicio.
+B. Realización de cambios de forma segura y eficiente.
+C. Mejora en la provisión de nuevos servicios.
+D. Todas las anteriores son correctas.
+
+5. Entre los principios que rigen la norma no se encuentra:
+A. El cliente.
+B. El servicio.
+C. La reducción de costes.
+D. La comunicación interna.
+
+6. Con la idea de evaluar la implantación de la familia de normas 20000 se crearon:
+A. La ISO/IEC TR 20000-2 y 20000-3.
+B. La ISO/IEC TR 20000-3 y 20000-4.
+C. La ISO/IEC TR 20000-6 y 20000-8.
+D. La ISO/IEC TR 20000-4 y 20000-8.
+
+7. La adopción incremental por niveles de la norma viene regulada en:
+A. La ISO/IEC 20000-2.
+B. La ISO/IEC 20000-3.
+C. La ISO/IEC 20000-4.
+D. La ISO/IEC 20000-5.
+
+
+8. Entre los procesos en los que se agrupan las actividades de la norma, no se encuentra:
+A. La provisión de servicio.
+B. El control.
+C. La configuración del servicio.
+D. La resolución.
+
+9. El proceso de generación de informes del servicio se encuentra entre los procesos de:
+A. Provisión del servicio.
+B. Control.
+C. Resolución.
+D. Relación.
+
+
+10. El diseño y transición de servicios nuevos o modificados tiene como misión:
+A. El mantenimiento del nivel de servicio dentro de un óptimo.
+B. La detección inmediata de errores.
+C. El mantenerse alineado con la creación y evolución de servicios de negocio.
+D. La comunicación interna.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

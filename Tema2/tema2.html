@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 2: Caso de Estudio - Proyecto de Aula</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .topic-page-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+            min-height: 100vh;
+        }
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.75rem 1.5rem;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-bottom: 2rem;
+            transition: background 0.3s ease;
+        }
+        .back-button:hover {
+            background: #0056b3;
+        }
+        .back-button i {
+            margin-right: 0.5rem;
+        }
+        .topic-header {
+            background: linear-gradient(135deg, #ffc107 0%, #fd7e14 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .topic-header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.5rem;
+        }
+        .topic-header p {
+            margin: 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header común -->
+        <header class="header">
+            <div class="header-content">
+                <h1><i class="fas fa-graduation-cap"></i> Proyecto de Aula</h1>
+                <h2>Servicios de Tecnología de la Información</h2>
+                <p class="subtitle">Material complementario para el curso de Ingeniería Informática</p>
+            </div>
+        </header>
+
+        <div class="topic-page-container">
+        <a href="../index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            Volver al Proyecto de Aula
+        </a>
+
+        <div class="topic-header">
+            <h1><i class="fas fa-chart-line"></i> Caso de Estudio</h1>
+            <p>Metodologías de análisis, evaluación económica</p>
+        </div>
+
+        <div class="topic-page">
+            <!-- Conceptos Section -->
+            <section class="topic-section">
+                <div class="section-header">
+                    <i class="fas fa-lightbulb"></i>
+                    <h2>Conceptos Clave</h2>
+                </div>
+                <div class="section-content">
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-clipboard-check"></i> EVS: Estudio de Viabilidad de Sistemas</h3>
+                        <p><strong>Definición:</strong> Metodología estructurada para evaluar la factibilidad técnica, económica y operativa de proyectos de sistemas de información.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Fases del EVS</h4>
+                                <ul>
+                                    <li><strong>EVS 1 - Establecimiento del Alcance:</strong> Definición del problema y objetivos del proyecto</li>
+                                    <li><strong>EVS 2 - Estudio de la Situación Actual:</strong> Análisis de procesos existentes y problemas</li>
+                                    <li><strong>EVS 3 - Definición de Requisitos:</strong> Identificación de necesidades funcionales y no funcionales</li>
+                                    <li><strong>EVS 4 - Descripción de Alternativas:</strong> Evaluación de diferentes soluciones técnicas</li>
+                                    <li><strong>EVS 5 - Valoración de Alternativas:</strong> Análisis coste-beneficio y selección de la mejor opción</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Beneficios del EVS</h4>
+                                <ul>
+                                    <li>Reducción de riesgos en la toma de decisiones</li>
+                                    <li>Optimización de la inversión tecnológica</li>
+                                    <li>Mejora en la planificación del proyecto</li>
+                                    <li>Justificación objetiva de decisiones</li>
+                                    <li>Identificación temprana de problemas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-chart-line"></i> ROI: Return on Investment</h3>
+                        <p><strong>Definición:</strong> Métrica financiera que mide la rentabilidad de una inversión comparando el beneficio obtenido con el costo de la inversión.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Fórmula del ROI</h4>
+                                <p><strong>ROI = (Beneficio Neto / Costo de Inversión) × 100</strong></p>
+                                <p>Donde:</p>
+                                <ul>
+                                    <li><strong>Beneficio Neto:</strong> Ingresos generados - Costos operativos</li>
+                                    <li><strong>Costo de Inversión:</strong> Inversión inicial en tecnología</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Interpretación del ROI</h4>
+                                <ul>
+                                    <li><strong>ROI > 0:</strong> Inversión rentable</li>
+                                    <li><strong>ROI = 0:</strong> Punto de equilibrio</li>
+                                    <li><strong>ROI < 0:</strong> Inversión no rentable</li>
+                                    <li><strong>ROI > 20%:</strong> Excelente retorno</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-calculator"></i> VAN: Valor Actual Neto</h3>
+                        <p><strong>Definición:</strong> Método de evaluación de inversiones que calcula el valor presente de los flujos de caja futuros menos la inversión inicial.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Fórmula del VAN</h4>
+                                <p><strong>VAN = Σ [CFt / (1 + r)^t] - I0</strong></p>
+                                <p>Donde:</p>
+                                <ul>
+                                    <li><strong>CFt:</strong> Flujo de caja en el período t</li>
+                                    <li><strong>r:</strong> Tasa de descuento</li>
+                                    <li><strong>t:</strong> Período de tiempo</li>
+                                    <li><strong>I0:</strong> Inversión inicial</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Criterios de Decisión</h4>
+                                <ul>
+                                    <li><strong>VAN > 0:</strong> Proyecto aceptable (genera valor)</li>
+                                    <li><strong>VAN = 0:</strong> Proyecto indiferente (punto de equilibrio)</li>
+                                    <li><strong>VAN < 0:</strong> Proyecto rechazable (destruye valor)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-percentage"></i> TIR: Tasa Interna de Retorno</h3>
+                        <p><strong>Definición:</strong> Tasa de descuento que hace que el VAN de un proyecto sea igual a cero, representando la rentabilidad esperada de la inversión.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Cálculo de la TIR</h4>
+                                <p>Se calcula encontrando la tasa (r) que satisface:</p>
+                                <p><strong>0 = Σ [CFt / (1 + TIR)^t] - I0</strong></p>
+                                <p>Se resuelve mediante métodos iterativos o herramientas financieras.</p>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Criterios de Evaluación</h4>
+                                <ul>
+                                    <li><strong>TIR > Costo de Capital:</strong> Proyecto aceptable</li>
+                                    <li><strong>TIR = Costo de Capital:</strong> Proyecto indiferente</li>
+                                    <li><strong>TIR < Costo de Capital:</strong> Proyecto rechazable</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-balance-scale"></i> Val IT: Metodología de Evaluación</h3>
+                        <p><strong>Definición:</strong> Marco de trabajo para evaluar y gestionar el valor de las inversiones en tecnología de la información.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Dimensiones de Val IT</h4>
+                                <ul>
+                                    <li><strong>Estrategia:</strong> Alineación con objetivos empresariales</li>
+                                    <li><strong>Arquitectura:</strong> Compatibilidad con infraestructura existente</li>
+                                    <li><strong>Valor:</strong> Beneficios tangibles e intangibles</li>
+                                    <li><strong>Entrega:</strong> Capacidad de implementación exitosa</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Beneficios de Val IT</h4>
+                                <ul>
+                                    <li>Evaluación integral de proyectos TI</li>
+                                    <li>Mejora en la toma de decisiones</li>
+                                    <li>Reducción de riesgos de inversión</li>
+                                    <li>Optimización del portafolio de proyectos</li>
+                                    <li>Alineación estratégica de TI</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-exclamation-triangle"></i> Análisis de Riesgos</h3>
+                        <p><strong>Definición:</strong> Proceso sistemático de identificación, evaluación y gestión de riesgos que pueden afectar el éxito de un proyecto de TI.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Componentes del Análisis</h4>
+                                <ul>
+                                    <li><strong>Probabilidad:</strong> Qué tan probable es que ocurra el riesgo</li>
+                                    <li><strong>Impacto:</strong> Magnitud del efecto si el riesgo se materializa</li>
+                                    <li><strong>Mitigación:</strong> Estrategias para reducir o eliminar el riesgo</li>
+                                    <li><strong>Contingencia:</strong> Planes alternativos si el riesgo ocurre</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Matriz de Riesgos</h4>
+                                <ul>
+                                    <li><strong>Riesgo Alto:</strong> Alta probabilidad + Alto impacto</li>
+                                    <li><strong>Riesgo Medio:</strong> Probabilidad o impacto moderado</li>
+                                    <li><strong>Riesgo Bajo:</strong> Baja probabilidad + Bajo impacto</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ejemplos Section -->
+            <section class="topic-section">
+                <div class="section-header">
+                    <i class="fas fa-flask"></i>
+                    <h2>Ejemplos Prácticos</h2>
+                </div>
+                <div class="section-content">
+                    <div class="example-section">
+                        <h3>Caso Principal: Botanas del Valle</h3>
+                        <div class="example-grid">
+                            <div class="example-item">
+                                <i class="fas fa-star"></i>
+                                <span>Sector: Alimentario</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-star"></i>
+                                <span>Productos: Botanas a base de maíz y frijol</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-star"></i>
+                                <span>Tamaño: PYME</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-star"></i>
+                                <span>Problemas: Recolección, producción, distribución, cobros</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-star"></i>
+                                <span>Objetivos: Buscar ventajas competitivas, Incrementar rentabilidad económica</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example-section">
+                        <h3>Otros Casos de Análisis</h3>
+                        <div class="example-grid">
+                            <div class="example-item">
+                                <i class="fas fa-star"></i>
+                                <span>Implantación de ERP en PYME: Empresa manufacturera</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-star"></i>
+                                <span>Migración a la nube: Empresa de servicios</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-star"></i>
+                                <span>Implementación de CRM: Empresa de ventas</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-star"></i>
+                                <span>Sistema de gestión documental: Oficina de abogados</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Actividades Section -->
+            <section class="topic-section">
+                <div class="section-header">
+                    <i class="fas fa-tasks"></i>
+                    <h2>Actividades de Refuerzo</h2>
+                </div>
+                <div class="section-content">
+                    <div class="activity-section">
+                        <div class="activity-header">
+                            <h3>Análisis de Situación Actual (20 min)</h3>
+                            <div class="activity-meta">
+                                <span class="duration"><i class="fas fa-clock"></i> Duración estimada</span>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-objective">
+                                <h4><i class="fas fa-target"></i> Objetivo</h4>
+                                <p>Aplicar metodología de análisis a un caso real</p>
+                            </div>
+                            <div class="activity-instructions">
+                                <h4><i class="fas fa-list-ol"></i> Instrucciones</h4>
+                                <ol>
+                                    <li>Elige una empresa que conozcas</li>
+                                    <li>Identifica 3 problemas en su gestión</li>
+                                    <li>Propón una solución tecnológica</li>
+                                    <li>Estima costos y beneficios básicos</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity-section">
+                        <div class="activity-header">
+                            <h3>Identificación de Riesgos (25 min)</h3>
+                            <div class="activity-meta">
+                                <span class="duration"><i class="fas fa-clock"></i> Duración estimada</span>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-objective">
+                                <h4><i class="fas fa-target"></i> Objetivo</h4>
+                                <p>Desarrollar habilidades de análisis de riesgos</p>
+                            </div>
+                            <div class="activity-instructions">
+                                <h4><i class="fas fa-list-ol"></i> Instrucciones</h4>
+                                <ol>
+                                    <li>Lista 5 riesgos en un proyecto de TI</li>
+                                    <li>Clasifica cada riesgo por probabilidad e impacto</li>
+                                    <li>Propón una estrategia de mitigación para cada uno</li>
+                                    <li>Prioriza los riesgos más críticos</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity-section">
+                        <div class="activity-header">
+                            <h3>Cálculo Básico de ROI (30 min)</h3>
+                            <div class="activity-meta">
+                                <span class="duration"><i class="fas fa-clock"></i> Duración estimada</span>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-objective">
+                                <h4><i class="fas fa-target"></i> Objetivo</h4>
+                                <p>Comprender la evaluación económica de proyectos</p>
+                            </div>
+                            <div class="activity-instructions">
+                                <h4><i class="fas fa-list-ol"></i> Instrucciones</h4>
+                                <ol>
+                                    <li>Define un proyecto simple (ej: compra de software)</li>
+                                    <li>Calcula el costo total del proyecto</li>
+                                    <li>Estima los beneficios anuales</li>
+                                    <li>Calcula el ROI básico</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recursos Section -->
+            <section class="topic-section">
+                <div class="section-header">
+                    <i class="fas fa-link"></i>
+                    <h2>Recursos Adicionales</h2>
+                </div>
+                <div class="section-content">
+                    <div class="resource-section">
+                        <h3>Videos Recomendados</h3>
+                        <div class="resource-grid">
+                            <a class="resource-item" href="https://youtube.com" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>¿Qué es un Estudio de Viabilidad?</span>
+                            </a>
+                            <a class="resource-item" href="https://youtube.com" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Cómo Calcular ROI en Proyectos de TI</span>
+                            </a>
+                            <a class="resource-item" href="https://youtube.com" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Gestión de Riesgos en Proyectos</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="resource-section">
+                        <h3>Artículos de Interés</h3>
+                        <div class="resource-grid">
+                            <a class="resource-item" href="#" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Metodologías de Análisis de TI</span>
+                            </a>
+                            <a class="resource-item" href="#" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Casos de Éxito en PYME</span>
+                            </a>
+                            <a class="resource-item" href="#" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Evaluación Económica de Proyectos</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="resource-section">
+                        <h3>Herramientas Online</h3>
+                        <div class="resource-grid">
+                            <a class="resource-item" href="#" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Calculadora de ROI</span>
+                            </a>
+                            <a class="resource-item" href="#" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Plantillas de Análisis de Riesgos</span>
+                            </a>
+                            <a class="resource-item" href="#" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Simulador de Proyectos</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

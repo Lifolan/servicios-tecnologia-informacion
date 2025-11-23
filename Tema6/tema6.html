@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 6: ITIL - Proyecto de Aula</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .topic-page-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+            min-height: 100vh;
+        }
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.75rem 1.5rem;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-bottom: 2rem;
+            transition: background 0.3s ease;
+        }
+        .back-button:hover {
+            background: #0056b3;
+        }
+        .back-button i {
+            margin-right: 0.5rem;
+        }
+        .topic-header {
+            background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .topic-header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.5rem;
+        }
+        .topic-header p {
+            margin: 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header común -->
+        <header class="header">
+            <div class="header-content">
+                <h1><i class="fas fa-graduation-cap"></i> Proyecto de Aula</h1>
+                <h2>Servicios de Tecnología de la Información</h2>
+                <p class="subtitle">Material complementario para el curso de Ingeniería Informática</p>
+            </div>
+        </header>
+
+        <div class="topic-page-container">
+        <a href="../index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            Volver al Proyecto de Aula
+        </a>
+
+        <div class="topic-header">
+            <h1><i class="fas fa-book"></i> ITIL</h1>
+            <p>La Biblioteca de Infraestructura de Tecnologías de la Información</p>
+        </div>
+
+        <div class="topic-page">
+            <!-- Conceptos Section -->
+            <section class="topic-section">
+                <div class="section-header">
+                    <i class="fas fa-lightbulb"></i>
+                    <h2>Conceptos Clave</h2>
+                </div>
+                <div class="section-content">
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-book"></i> ¿Qué es ITIL?</h3>
+                        <p><strong>Definición:</strong> ITIL (Information Technology Infrastructure Library) es el principal marco de buenas prácticas para la gestión de servicios de TI. Esta iniciativa nació en 1989 con la publicación de un libro sobre el Service Desk y otro sobre la gestión del nivel de servicio, y ha evolucionado a lo largo de los años extendiéndose a la mayoría de las organizaciones.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Paradigma Orientado a Servicios</h4>
+                                <p>La orientación del desarrollo y aplicación de las TIC orientada a servicios se basa en un paradigma diferente al de procesos. El paradigma orientado a servicios no se centra en la ejecución de procesos sino en la <strong>demanda del cliente de TI</strong>.</p>
+                                <p><strong>Diferencias clave:</strong></p>
+                                <ul>
+                                    <li><strong>Proceso:</strong> Se centra en la consecución de objetivos mediante procesos internos concatenados</li>
+                                    <li><strong>Servicio:</strong> Se centra en la posible demanda del cliente</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Beneficios de ITIL</h4>
+                                <ul>
+                                    <li>Mejora la calidad en la prestación del servicio TIC</li>
+                                    <li>Enriquece la comunicación con los usuarios al usar el mismo lenguaje</li>
+                                    <li>Aumenta la flexibilidad ante cambios del mercado</li>
+                                    <li>Mejora la satisfacción de los clientes</li>
+                                    <li>Mejora el rendimiento, disponibilidad y seguridad de los servicios TIC</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-sitemap"></i> Ciclo de Vida del Servicio</h3>
+                        <p><strong>Importancia:</strong> ITIL está organizado en torno al concepto de Ciclo de Vida del Servicio, que proporciona una visión completa de cómo gestionar servicios de TI desde su concepción hasta su retirada.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>6.3. Estrategia del Servicio</h4>
+                                <p><strong>Objetivo:</strong> Convertir la Gestión del Servicio en un activo estratégico.</p>
+                                <p><strong>Procesos clave:</strong></p>
+                                <ul>
+                                    <li><strong>Gestión Financiera:</strong> Garantizar servicios con costes controlados y relación calidad-precio</li>
+                                    <li><strong>Gestión del Portfolio de Servicios:</strong> Inversión en servicios que ofrezcan máximo valor al cliente</li>
+                                    <li><strong>Gestión de la Demanda:</strong> Armonización de la oferta con las demandas del mercado</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>6.4. Diseño del Servicio</h4>
+                                <p><strong>Misión:</strong> Diseñar nuevos servicios o modificar los existentes para su incorporación al catálogo de servicios y su paso al entorno de producción.</p>
+                                <p><strong>Procesos principales:</strong></p>
+                                <ul>
+                                    <li>Gestión del Catálogo de Servicios</li>
+                                    <li>Gestión de Niveles de Servicio (SLA)</li>
+                                    <li>Gestión de la Capacidad</li>
+                                    <li>Gestión de la Disponibilidad</li>
+                                    <li>Gestión de la Continuidad de los Servicios TI</li>
+                                    <li>Gestión de la Seguridad de la Información</li>
+                                    <li>Gestión de Proveedores</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>6.5. Transición del Servicio</h4>
+                                <p><strong>Misión:</strong> Integrar los productos y servicios definidos en la fase de Diseño al entorno de producción.</p>
+                                <p><strong>Procesos principales:</strong></p>
+                                <ul>
+                                    <li>Planificación y soporte a la Transición</li>
+                                    <li>Gestión de Cambios</li>
+                                    <li>Gestión de la Configuración y Activos del Servicio (CMDB)</li>
+                                    <li>Gestión de Entregas y Despliegues</li>
+                                    <li>Validación y pruebas</li>
+                                    <li>Evaluación</li>
+                                    <li>Gestión del Conocimiento</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>6.6. Operación del Servicio</h4>
+                                <p><strong>Equilibrio esencial:</strong> Estabilidad vs. Capacidad de respuesta.</p>
+                                <p><strong>Procesos principales:</strong></p>
+                                <ul>
+                                    <li><strong>Gestión de Eventos:</strong> Monitorizar eventos de la infraestructura TI</li>
+                                    <li><strong>Gestión de Incidencias:</strong> Registrar y restaurar servicios afectados</li>
+                                    <li><strong>Petición de Servicios TI:</strong> Gestionar peticiones de usuarios</li>
+                                    <li><strong>Gestión de Problemas:</strong> Analizar y solucionar incidentes recurrentes</li>
+                                    <li><strong>Gestión de Acceso:</strong> Control de acceso a información restringida</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>6.7. Mejora del Servicio</h4>
+                                <p><strong>Objetivo:</strong> Ofrecer mejores servicios adaptados a las cambiantes necesidades de los clientes mediante procesos internos optimizados.</p>
+                                <p><strong>Dimensiones de medición:</strong></p>
+                                <ul>
+                                    <li><strong>Conformidad:</strong> Los procesos se adecuan a modelos y protocolos</li>
+                                    <li><strong>Calidad:</strong> Se cumplen objetivos preestablecidos</li>
+                                    <li><strong>Rendimiento:</strong> Procesos eficientes y rentables</li>
+                                    <li><strong>Valor:</strong> Servicios que se diferencian de la competencia</li>
+                                </ul>
+                                <p><strong>Procesos:</strong></p>
+                                <ul>
+                                    <li>Proceso de Mejora (7 pasos - Plan de Mejora del Servicio SIP)</li>
+                                    <li>Informes de Servicios TI</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-users"></i> Gestión del Servicio</h3>
+                        <p><strong>Definición:</strong> La gestión del servicio se dirige a proporcionar datos para la toma de decisiones desde una perspectiva de procesos y proporcionar una implementación profesional con responsabilidades bien definidas.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Prerrequisitos</h4>
+                                <ul>
+                                    <li>Disposición incondicional de la dirección y personal TIC</li>
+                                    <li>Focalización en el cliente y en el servicio</li>
+                                    <li>Arquitecturas basadas en servicios para mejora de procesos de negocio</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Características Clave</h4>
+                                <ul>
+                                    <li>Proporciona datos para toma de decisiones</li>
+                                    <li>Implementación profesional</li>
+                                    <li>Responsabilidades bien definidas</li>
+                                    <li>Orientación al cliente y al servicio</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-headset"></i> Service Desk</h3>
+                        <p><strong>Definición:</strong> El Service Desk es el punto único de contacto entre los usuarios y el departamento de TI. Proporciona un canal centralizado para recibir, gestionar y resolver solicitudes de servicio e incidencias.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Funciones Principales</h4>
+                                <ul>
+                                    <li><strong>Punto único de contacto:</strong> Centraliza todas las comunicaciones con usuarios</li>
+                                    <li><strong>Registro de incidencias:</strong> Captura y registra todas las incidencias</li>
+                                    <li><strong>Gestión de solicitudes:</strong> Administra peticiones de servicio</li>
+                                    <li><strong>Comunicación:</strong> Mantiene informados a los usuarios sobre el estado</li>
+                                    <li><strong>Escalación:</strong> Deriva casos complejos a equipos especializados</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Tipos de Service Desk</h4>
+                                <ul>
+                                    <li><strong>Local:</strong> Presencial en cada ubicación, contacto directo</li>
+                                    <li><strong>Centralizado:</strong> Un solo punto para toda la organización</li>
+                                    <li><strong>Virtual:</strong> Distribuido geográficamente pero unificado técnicamente</li>
+                                    <li><strong>Follow the Sun:</strong> Soporte 24/7 pasando casos entre zonas horarias</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-file-contract"></i> Acuerdos y Contratos de Servicio</h3>
+                        <p><strong>Importancia:</strong> Los acuerdos y contratos definen formalmente los niveles de servicio esperados y compromisos entre las partes involucradas en la prestación de servicios.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>SLA (Service Level Agreement)</h4>
+                                <p><strong>Definición:</strong> Acuerdo formal entre el proveedor de servicios y el cliente que documenta los servicios requeridos y los niveles de servicio esperados.</p>
+                                <p><strong>Componentes:</strong></p>
+                                <ul>
+                                    <li>Descripción de servicios</li>
+                                    <li>Métricas de disponibilidad</li>
+                                    <li>Tiempos de respuesta y resolución</li>
+                                    <li>Procedimientos de reporte</li>
+                                    <li>Consecuencias de incumplimiento</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>OLA (Operational Level Agreement)</h4>
+                                <p><strong>Definición:</strong> Acuerdo interno entre departamentos o equipos de TI que define cómo se prestarán los servicios de soporte para cumplir con los SLA.</p>
+                                <p><strong>Propósito:</strong> Asegurar que los equipos internos trabajen coordinadamente para cumplir los compromisos con el cliente.</p>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>UC (Underpinning Contract)</h4>
+                                <p><strong>Definición:</strong> Contrato legal con un proveedor externo que especifica los servicios que debe proporcionar para apoyar la entrega de servicios al cliente.</p>
+                                <p><strong>Importancia:</strong> Asegura que los proveedores externos cumplan con los niveles necesarios para satisfacer los SLA.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-balance-scale"></i> Diferencias Fundamentales: Incident, Problem y Change</h3>
+                        <p><strong>Importancia:</strong> Comprender las diferencias entre estos conceptos es fundamental para aplicar correctamente los procesos ITIL.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Incident (Incidencia)</h4>
+                                <p><strong>Definición:</strong> Interrupción no planificada de un servicio o reducción en su calidad.</p>
+                                <p><strong>Características:</strong></p>
+                                <ul>
+                                    <li>Enfoque: Restaurar el servicio lo más rápido posible</li>
+                                    <li>Prioridad: Inmediata</li>
+                                    <li>Ejemplo: Usuario no puede acceder al correo electrónico</li>
+                                    <li>Proceso: Gestión de Incidencias</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Problem (Problema)</h4>
+                                <p><strong>Definición:</strong> Causa raíz de una o más incidencias. Puede no estar identificada al momento de la incidencia.</p>
+                                <p><strong>Características:</strong></p>
+                                <ul>
+                                    <li>Enfoque: Identificar y eliminar la causa raíz</li>
+                                    <li>Prioridad: Investigación y solución permanente</li>
+                                    <li>Ejemplo: Error en el código que causa caídas recurrentes</li>
+                                    <li>Proceso: Gestión de Problemas</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Change (Cambio)</h4>
+                                <p><strong>Definición:</strong> Adición, modificación o eliminación de algo que podría tener un efecto en los servicios de TI.</p>
+                                <p><strong>Características:</strong></p>
+                                <ul>
+                                    <li>Enfoque: Controlar cambios para minimizar riesgos</li>
+                                    <li>Prioridad: Planificación y aprobación antes de implementar</li>
+                                    <li>Ejemplo: Actualizar un sistema operativo</li>
+                                    <li>Proceso: Gestión de Cambios</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Request Fulfillment vs Incident Management</h4>
+                                <p><strong>Request Fulfillment (Petición de Servicio):</strong> Solicitud del usuario para acceso a información, servicios o cambios estándar pre-autorizados (ej: nueva cuenta de correo, acceso a aplicación).</p>
+                                <p><strong>Incident Management:</strong> Gestiona interrupciones o degradaciones del servicio. Requiere restauración inmediata.</p>
+                                <p><strong>Diferencia clave:</strong> Las peticiones son solicitudes normales, las incidencias son fallos que requieren corrección.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-database"></i> CMDB (Configuration Management Database)</h3>
+                        <p><strong>Definición:</strong> Base de datos que contiene información sobre todos los elementos de configuración (CIs) y las relaciones entre ellos.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Elementos de Configuración (CIs)</h4>
+                                <p><strong>Definición:</strong> Cualquier componente o elemento que necesita ser gestionado para entregar un servicio de TI.</p>
+                                <p><strong>Ejemplos:</strong></p>
+                                <ul>
+                                    <li>Hardware: Servidores, switches, routers</li>
+                                    <li>Software: Aplicaciones, sistemas operativos, bases de datos</li>
+                                    <li>Documentación: Manuales, procedimientos</li>
+                                    <li>Personas: Roles y responsabilidades</li>
+                                    <li>Servicios: Servicios de TI gestionados</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Relaciones entre CIs</h4>
+                                <p><strong>Importancia:</strong> Las relaciones permiten entender el impacto de cambios e incidencias.</p>
+                                <p><strong>Tipos de relaciones:</strong></p>
+                                <ul>
+                                    <li>Depende de / Depende por</li>
+                                    <li>Conectado a / Conectado desde</li>
+                                    <li>Usado por / Usa</li>
+                                    <li>Implementa / Implementado por</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Beneficios del CMDB</h4>
+                                <ul>
+                                    <li>Visibilidad completa de la infraestructura</li>
+                                    <li>Análisis de impacto de cambios</li>
+                                    <li>Rastreo de relaciones entre componentes</li>
+                                    <li>Mejora en la gestión de incidencias y problemas</li>
+                                    <li>Cumplimiento de normativas y auditorías</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-list-alt"></i> Service Catalog vs Service Portfolio</h3>
+                        <p><strong>Importancia:</strong> Comprender la diferencia entre Catálogo y Portfolio es esencial para la gestión estratégica de servicios.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Service Catalog (Catálogo de Servicios)</h4>
+                                <p><strong>Definición:</strong> Lista de servicios disponibles para clientes y usuarios, con información sobre cómo acceder y utilizar cada servicio.</p>
+                                <p><strong>Características:</strong></p>
+                                <ul>
+                                    <li>Servicios activos y disponibles</li>
+                                    <li>Visible para clientes y usuarios</li>
+                                    <li>Información de servicios operacionales</li>
+                                    <li>Incluye descripciones, precios, SLA</li>
+                                    <li>Herramienta de comunicación con clientes</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Service Portfolio (Portfolio de Servicios)</h4>
+                                <p><strong>Definición:</strong> Conjunto completo de servicios gestionados por el proveedor de servicios, incluyendo todos los estados del ciclo de vida.</p>
+                                <p><strong>Estados del ciclo de vida:</strong></p>
+                                <ul>
+                                    <li><strong>Pipeline:</strong> Servicios en desarrollo o planificación</li>
+                                    <li><strong>Service Catalog:</strong> Servicios activos y disponibles</li>
+                                    <li><strong>Retired:</strong> Servicios retirados o descontinuados</li>
+                                </ul>
+                                <p><strong>Uso:</strong> Herramienta de gestión estratégica para toma de decisiones de inversión.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-exchange-alt"></i> Gestión de Cambios</h3>
+                        <p><strong>Definición:</strong> Proceso que controla el ciclo de vida de todos los cambios, permitiendo beneficios con un riesgo mínimo para los servicios de TI.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>CAB (Change Advisory Board)</h4>
+                                <p><strong>Definición:</strong> Grupo de personas que proporciona asesoramiento experto para evaluar cambios importantes y tomar decisiones sobre su aprobación.</p>
+                                <p><strong>Composición:</strong></p>
+                                <ul>
+                                    <li>Change Manager (preside)</li>
+                                    <li>Representantes de equipos técnicos</li>
+                                    <li>Representantes de usuarios</li>
+                                    <li>Expertos en áreas específicas según el cambio</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Tipos de Cambios</h4>
+                                <ul>
+                                    <li><strong>Normal:</strong> Requiere evaluación, aprobación y planificación. Proceso estándar completo.</li>
+                                    <li><strong>Estándar:</strong> Cambios pre-aprobados, de bajo riesgo, que siguen un procedimiento predefinido.</li>
+                                    <li><strong>Urgente:</strong> Requiere implementación rápida (ej: parche de seguridad crítico). Proceso acelerado.</li>
+                                    <li><strong>Emergencia:</strong> Cambios críticos que deben implementarse inmediatamente. Post-implementación se documenta.</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Flujo del Proceso de Cambio</h4>
+                                <ol>
+                                    <li><strong>Registro:</strong> Captura de la solicitud de cambio (RFC)</li>
+                                    <li><strong>Evaluación:</strong> Análisis de impacto, riesgo y recursos</li>
+                                    <li><strong>Decisión:</strong> Aprobación o rechazo por Change Manager o CAB</li>
+                                    <li><strong>Planificación:</strong> Desarrollo del plan de implementación</li>
+                                    <li><strong>Implementación:</strong> Ejecución del cambio</li>
+                                    <li><strong>Revisión:</strong> Evaluación post-implementación</li>
+                                    <li><strong>Cierre:</strong> Documentación y cierre del registro</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-user-tie"></i> Roles y Responsabilidades</h3>
+                        <p><strong>Importancia:</strong> ITIL define roles claros para asegurar que cada aspecto de la gestión de servicios tenga responsables definidos.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Service Owner</h4>
+                                <p><strong>Responsabilidad:</strong> Propietario de un servicio específico a lo largo de todo su ciclo de vida.</p>
+                                <p><strong>Funciones:</strong></p>
+                                <ul>
+                                    <li>Representar el servicio ante el cliente</li>
+                                    <li>Gestionar el servicio desde perspectiva de negocio</li>
+                                    <li>Asegurar que el servicio cumple con los SLA</li>
+                                    <li>Participar en el diseño y mejora del servicio</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Process Owner</h4>
+                                <p><strong>Responsabilidad:</strong> Propietario de un proceso específico, responsable de su diseño, implementación y mejora.</p>
+                                <p><strong>Funciones:</strong></p>
+                                <ul>
+                                    <li>Definir la estrategia del proceso</li>
+                                    <li>Asegurar que el proceso está documentado</li>
+                                    <li>Capacitar a los practicantes del proceso</li>
+                                    <li>Monitorear y mejorar el proceso</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>RACI Matrix</h4>
+                                <p><strong>Definición:</strong> Herramienta para definir roles y responsabilidades en procesos y actividades.</p>
+                                <p><strong>Componentes:</strong></p>
+                                <ul>
+                                    <li><strong>R (Responsible):</strong> Ejecuta la tarea</li>
+                                    <li><strong>A (Accountable):</strong> Responsable final, tiene autoridad</li>
+                                    <li><strong>C (Consulted):</strong> Proporciona información o consulta</li>
+                                    <li><strong>I (Informed):</strong> Mantenido informado del progreso</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-chart-line"></i> KPIs y Métricas</h3>
+                        <p><strong>Importancia:</strong> Las métricas permiten medir el desempeño de servicios y procesos para tomar decisiones informadas y mejorar continuamente.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Métricas de Servicio</h4>
+                                <p><strong>Ejemplos:</strong></p>
+                                <ul>
+                                    <li><strong>Disponibilidad:</strong> Porcentaje de tiempo que el servicio está disponible</li>
+                                    <li><strong>Tiempo de respuesta:</strong> Tiempo desde la detección hasta el inicio de la resolución</li>
+                                    <li><strong>Tiempo de resolución:</strong> Tiempo total para resolver una incidencia</li>
+                                    <li><strong>MTBF (Mean Time Between Failures):</strong> Tiempo promedio entre fallos</li>
+                                    <li><strong>MTTR (Mean Time To Repair):</strong> Tiempo promedio para reparar</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Métricas de Proceso</h4>
+                                <p><strong>Ejemplos:</strong></p>
+                                <ul>
+                                    <li><strong>Tiempo de ciclo:</strong> Tiempo total del proceso</li>
+                                    <li><strong>Cumplimiento de SLA:</strong> Porcentaje de SLA cumplidos</li>
+                                    <li><strong>Volumen:</strong> Número de incidencias, cambios, problemas gestionados</li>
+                                    <li><strong>Backlog:</strong> Número de elementos pendientes</li>
+                                    <li><strong>Tasa de escalación:</strong> Porcentaje de casos escalados</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Balanced Scorecard en TI</h4>
+                                <p><strong>Definición:</strong> Marco de medición que considera múltiples perspectivas del desempeño.</p>
+                                <p><strong>Perspectivas:</strong></p>
+                                <ul>
+                                    <li><strong>Financiera:</strong> Costos, ROI, presupuesto</li>
+                                    <li><strong>Cliente:</strong> Satisfacción, percepción de valor</li>
+                                    <li><strong>Procesos Internos:</strong> Eficiencia, calidad de procesos</li>
+                                    <li><strong>Aprendizaje y Crecimiento:</strong> Capacitación, innovación</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-sync-alt"></i> Continual Improvement Model</h3>
+                        <p><strong>Definición:</strong> Modelo de mejora continua que proporciona un enfoque estructurado para mejorar la calidad de los servicios y procesos.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>7 Pasos del Modelo de Mejora</h4>
+                                <ol>
+                                    <li><strong>¿Qué debemos mejorar?:</strong> Identificar oportunidades de mejora</li>
+                                    <li><strong>¿Qué podemos mejorar?:</strong> Priorizar oportunidades basadas en valor</li>
+                                    <li><strong>¿Cómo mejoramos?:</strong> Diseñar la solución</li>
+                                    <li><strong>¿Cómo medimos?:</strong> Definir métricas y KPIs</li>
+                                    <li><strong>¿Hemos mejorado?:</strong> Evaluar resultados</li>
+                                    <li><strong>¿Cómo mantenemos?:</strong> Asegurar que las mejoras se mantienen</li>
+                                    <li><strong>¿Cómo lo hacemos mejor?:</strong> Aprender y optimizar</li>
+                                </ol>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Plan de Mejora del Servicio (SIP)</h4>
+                                <p><strong>Definición:</strong> Documento formal que describe las mejoras planificadas para un servicio durante un período específico.</p>
+                                <p><strong>Componentes:</strong></p>
+                                <ul>
+                                    <li>Objetivos de mejora</li>
+                                    <li>Actividades planificadas</li>
+                                    <li>Métricas y metas</li>
+                                    <li>Recursos requeridos</li>
+                                    <li>Cronograma</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-cogs"></i> Service Value System (ITIL 4)</h3>
+                        <p><strong>Definición:</strong> Sistema operativo que permite a las organizaciones crear valor a través del uso efectivo de productos y servicios de TI.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Guiding Principles (Principios Rectores)</h4>
+                                <p><strong>Los 7 principios de ITIL 4:</strong></p>
+                                <ol>
+                                    <li><strong>Focus on value:</strong> Todo debe aportar valor</li>
+                                    <li><strong>Start where you are:</strong> Aprovechar lo existente</li>
+                                    <li><strong>Progress iteratively with feedback:</strong> Avanzar paso a paso</li>
+                                    <li><strong>Collaborate and promote visibility:</strong> Trabajar juntos y transparentemente</li>
+                                    <li><strong>Think and work holistically:</strong> Pensar en el sistema completo</li>
+                                    <li><strong>Keep it simple and practical:</strong> Simplicidad y practicidad</li>
+                                    <li><strong>Optimize and automate:</strong> Optimizar y automatizar</li>
+                                </ol>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Governance (Gobernanza)</h4>
+                                <p><strong>Definición:</strong> Marco que dirige y controla las actividades de la organización.</p>
+                                <p><strong>Componentes:</strong></p>
+                                <ul>
+                                    <li>Políticas y directrices</li>
+                                    <li>Estructura organizacional</li>
+                                    <li>Roles y responsabilidades</li>
+                                    <li>Métricas y reportes</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Service Value Chain (Cadena de Valor del Servicio)</h4>
+                                <p><strong>Definición:</strong> Conjunto de actividades interconectadas que una organización utiliza para crear valor.</p>
+                                <p><strong>Actividades:</strong></p>
+                                <ul>
+                                    <li><strong>Plan:</strong> Planificación y gobernanza</li>
+                                    <li><strong>Improve:</strong> Mejora continua</li>
+                                    <li><strong>Engage:</strong> Interacción con stakeholders</li>
+                                    <li><strong>Design & Transition:</strong> Diseño y transición</li>
+                                    <li><strong>Obtain/Build:</strong> Obtención y construcción</li>
+                                    <li><strong>Deliver & Support:</strong> Entrega y soporte</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Practices (Prácticas)</h4>
+                                <p><strong>Definición:</strong> Conjunto de recursos organizacionales diseñados para realizar trabajo o lograr un objetivo.</p>
+                                <p><strong>ITIL 4 tiene 34 prácticas:</strong></p>
+                                <ul>
+                                    <li><strong>General Management Practices:</strong> 14 prácticas</li>
+                                    <li><strong>Service Management Practices:</strong> 17 prácticas</li>
+                                    <li><strong>Technical Management Practices:</strong> 3 prácticas</li>
+                                </ul>
+                                <p><strong>Ejemplos:</strong> Gestión de Incidentes, Gestión de Problemas, Gestión de Cambios, Gestión de Configuración, etc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ejemplos Section -->
+            <section class="topic-section">
+                <div class="section-header">
+                    <i class="fas fa-flask"></i>
+                    <h2>Ejemplos Prácticos</h2>
+                </div>
+                <div class="section-content">
+                    <div class="example-section">
+                        <h3>Casos de Implementación de ITIL</h3>
+                        <div class="example-grid">
+                            <div class="example-item">
+                                <i class="fas fa-star"></i>
+                                <span>Empresa Financiera: Implementación de Service Desk</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-star"></i>
+                                <span>Administración Pública: Gestión de Incidencias</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-star"></i>
+                                <span>Empresa Manufacturera: Gestión de Cambios</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-star"></i>
+                                <span>Organización de Salud: Gestión de Disponibilidad</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example-section">
+                        <h3>Aplicaciones por Fase</h3>
+                        <div class="example-grid">
+                            <div class="example-item">
+                                <i class="fas fa-star"></i>
+                                <span>Estrategia: Definición de Portfolio de Servicios</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-star"></i>
+                                <span>Diseño: Creación de SLA y Catálogo de Servicios</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-star"></i>
+                                <span>Transición: Proceso de Gestión de Cambios</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-star"></i>
+                                <span>Operación: Service Desk y Gestión de Incidencias</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-star"></i>
+                                <span>Mejora: Plan de Mejora Continua del Servicio</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Actividades Section -->
+            <section class="topic-section">
+                <div class="section-header">
+                    <i class="fas fa-tasks"></i>
+                    <h2>Actividades de Refuerzo</h2>
+                </div>
+                <div class="section-content">
+                    <div class="activity-section">
+                        <div class="activity-header">
+                            <h3>Mapeo de Procesos ITIL (30 min)</h3>
+                            <div class="activity-meta">
+                                <span class="duration"><i class="fas fa-clock"></i> Duración estimada</span>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-objective">
+                                <h4><i class="fas fa-target"></i> Objetivo</h4>
+                                <p>Identificar y mapear los procesos ITIL en una organización real o ficticia</p>
+                            </div>
+                            <div class="activity-instructions">
+                                <h4><i class="fas fa-list-ol"></i> Instrucciones</h4>
+                                <ol>
+                                    <li>Elige una organización que conozcas (empresa, universidad, etc.)</li>
+                                    <li>Identifica qué procesos ITIL ya están implementados</li>
+                                    <li>Mapea cada proceso identificado a su fase correspondiente del ciclo de vida</li>
+                                    <li>Identifica qué procesos faltan por implementar</li>
+                                    <li>Prioriza los procesos faltantes según su importancia estratégica</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity-section">
+                        <div class="activity-header">
+                            <h3>Diseño de SLA (Service Level Agreement) (25 min)</h3>
+                            <div class="activity-meta">
+                                <span class="duration"><i class="fas fa-clock"></i> Duración estimada</span>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-objective">
+                                <h4><i class="fas fa-target"></i> Objetivo</h4>
+                                <p>Comprender la importancia de los SLA en la gestión de servicios</p>
+                            </div>
+                            <div class="activity-instructions">
+                                <h4><i class="fas fa-list-ol"></i> Instrucciones</h4>
+                                <ol>
+                                    <li>Elige un servicio de TI específico (correo electrónico, hosting, etc.)</li>
+                                    <li>Define los objetivos de nivel de servicio (disponibilidad, tiempo de respuesta, etc.)</li>
+                                    <li>Establece métricas medibles para cada objetivo</li>
+                                    <li>Define los procedimientos de reporte y revisión</li>
+                                    <li>Identifica las consecuencias de no cumplir los SLA</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity-section">
+                        <div class="activity-header">
+                            <h3>Análisis de Ciclo de Vida del Servicio (20 min)</h3>
+                            <div class="activity-meta">
+                                <span class="duration"><i class="fas fa-clock"></i> Duración estimada</span>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-objective">
+                                <h4><i class="fas fa-target"></i> Objetivo</h4>
+                                <p>Comprender cómo interactúan las fases del ciclo de vida del servicio</p>
+                            </div>
+                            <div class="activity-instructions">
+                                <h4><i class="fas fa-list-ol"></i> Instrucciones</h4>
+                                <ol>
+                                    <li>Elige un servicio de TI nuevo que se haya implementado recientemente</li>
+                                    <li>Describe cómo se aplicó cada fase del ciclo de vida (Estrategia, Diseño, Transición, Operación, Mejora)</li>
+                                    <li>Identifica los procesos clave utilizados en cada fase</li>
+                                    <li>Analiza qué mejoras se podrían aplicar en futuras implementaciones</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
+

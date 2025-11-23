@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Práctica: Service Desk e ITIL - Gestor de Proyecto</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1><i class="fas fa-graduation-cap"></i> Actividad Práctica: Service Desk e ITIL</h1>
+                <h2>Gestor de Proyecto - Implementación en Institución Educativa</h2>
+                <p class="subtitle">Herramienta para el seguimiento y desarrollo de la actividad práctica</p>
+            </div>
+        </header>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-text">
+                <span id="progressText">Progreso: 0%</span>
+            </div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <nav class="nav-tabs">
+            <button class="nav-tab active" data-tab="contexto">
+                <i class="fas fa-building"></i> Contexto
+            </button>
+            <button class="nav-tab" data-tab="procesos">
+                <i class="fas fa-cogs"></i> Procesos ITIL
+            </button>
+            <button class="nav-tab" data-tab="flujo">
+                <i class="fas fa-project-diagram"></i> Flujo de Actividades
+            </button>
+            <button class="nav-tab" data-tab="calculadora">
+                <i class="fas fa-calculator"></i> Calculadora SLA
+            </button>
+            <button class="nav-tab" data-tab="exportar">
+                <i class="fas fa-download"></i> Exportar
+            </button>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Contexto Tab -->
+            <div class="tab-content active" id="contexto">
+                <div class="section-header">
+                    <h2><i class="fas fa-building"></i> Configuración del Contexto</h2>
+                    <p>Define la institución educativa y los parámetros iniciales del proyecto</p>
+                </div>
+                
+                <div class="form-section">
+                    <div class="form-group">
+                        <label for="nombreInstitucion"><i class="fas fa-university"></i> Nombre de la Institución Educativa</label>
+                        <input type="text" id="nombreInstitucion" placeholder="Ej: Universidad Tecnológica FloridablancaTEC" class="form-control">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="numEstudiantes"><i class="fas fa-user-graduate"></i> Número de Estudiantes</label>
+                            <input type="number" id="numEstudiantes" placeholder="8000" class="form-control" min="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="numProfesores"><i class="fas fa-chalkboard-teacher"></i> Número de Profesores</label>
+                            <input type="number" id="numProfesores" placeholder="500" class="form-control" min="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="numAdmin"><i class="fas fa-users"></i> Personal Administrativo</label>
+                            <input type="number" id="numAdmin" placeholder="200" class="form-control" min="0">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="situacionActual"><i class="fas fa-exclamation-triangle"></i> Situación Actual (Problemas Identificados)</label>
+                        <textarea id="situacionActual" rows="4" class="form-control" placeholder="Ej: No existe Service Desk formal, incidencias por email/WhatsApp, tiempo de resolución 3-5 días..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="objetivo"><i class="fas fa-bullseye"></i> Objetivo de la Implementación</label>
+                        <textarea id="objetivo" rows="3" class="form-control" placeholder="Ej: Implementar Service Desk virtual con gestión de incidencias basado en ITIL, alcanzando nivel de madurez 3 en 6 meses..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tiposIncidencias"><i class="fas fa-list"></i> Tipos de Incidencias Comunes</label>
+                        <textarea id="tiposIncidencias" rows="5" class="form-control" placeholder="Ej: Problemas de acceso a LMS, incidencias de red en laboratorios, problemas con proyección en aulas..."></textarea>
+                    </div>
+
+                    <button class="btn btn-primary" onclick="guardarContexto()">
+                        <i class="fas fa-save"></i> Guardar Contexto
+                    </button>
+                </div>
+            </div>
+
+            <!-- Procesos ITIL Tab -->
+            <div class="tab-content" id="procesos">
+                <div class="section-header">
+                    <h2><i class="fas fa-cogs"></i> Gestión de Procesos ITIL</h2>
+                    <p>Completa la tabla con los procesos ITIL relevantes para tu institución</p>
+                </div>
+
+                <div class="table-container">
+                    <table class="data-table" id="procesosTable">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Proceso ITIL</th>
+                                <th>Actividad del Proceso</th>
+                                <th>Nivel Inicial</th>
+                                <th>Nivel Objetivo</th>
+                                <th>Actividades Específicas</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="procesosTableBody">
+                            <!-- Procesos se cargarán dinámicamente -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="actions-bar">
+                    <button class="btn btn-success" onclick="agregarProceso()">
+                        <i class="fas fa-plus"></i> Agregar Proceso
+                    </button>
+                    <button class="btn btn-info" onclick="cargarProcesosEjemplo()">
+                        <i class="fas fa-lightbulb"></i> Cargar Ejemplos
+                    </button>
+                    <button class="btn btn-primary" onclick="guardarProcesos()">
+                        <i class="fas fa-save"></i> Guardar Procesos
+                    </button>
+                </div>
+            </div>
+
+            <!-- Flujo de Actividades Tab -->
+            <div class="tab-content" id="flujo">
+                <div class="section-header">
+                    <h2><i class="fas fa-project-diagram"></i> Flujo de Actividades</h2>
+                    <p>Define el flujo completo desde la recepción hasta el seguimiento</p>
+                </div>
+
+                <div class="table-container">
+                    <table class="data-table" id="flujoTable">
+                        <thead>
+                            <tr>
+                                <th>Fase</th>
+                                <th>Actividad</th>
+                                <th>Proceso ITIL</th>
+                                <th>Responsable</th>
+                                <th>Tiempo Objetivo</th>
+                                <th>Criterios de Éxito</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="flujoTableBody">
+                            <!-- Flujo se cargará dinámicamente -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="actions-bar">
+                    <button class="btn btn-success" onclick="agregarFase()">
+                        <i class="fas fa-plus"></i> Agregar Fase
+                    </button>
+                    <button class="btn btn-info" onclick="cargarFlujoEjemplo()">
+                        <i class="fas fa-lightbulb"></i> Cargar Flujo Ejemplo
+                    </button>
+                    <button class="btn btn-primary" onclick="guardarFlujo()">
+                        <i class="fas fa-save"></i> Guardar Flujo
+                    </button>
+                </div>
+            </div>
+
+            <!-- Calculadora SLA Tab -->
+            <div class="tab-content" id="calculadora">
+                <div class="section-header">
+                    <h2><i class="fas fa-calculator"></i> Calculadora de SLA y Métricas</h2>
+                    <p>Calcula tiempos de SLA según prioridad y tipo de usuario</p>
+                </div>
+
+                <div class="calculator-section">
+                    <div class="calculator-card">
+                        <h3><i class="fas fa-clock"></i> Calculadora de SLA</h3>
+                        <div class="form-group">
+                            <label for="tipoUsuario">Tipo de Usuario</label>
+                            <select id="tipoUsuario" class="form-control">
+                                <option value="estudiante">Estudiante</option>
+                                <option value="profesor">Profesor</option>
+                                <option value="profesor-critico">Profesor (Clase Activa - Crítico)</option>
+                                <option value="administrativo">Personal Administrativo</option>
+                                <option value="critico">Crítico (Sistema Caído)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="prioridad">Prioridad</label>
+                            <select id="prioridad" class="form-control">
+                                <option value="critica">Crítica</option>
+                                <option value="alta">Alta</option>
+                                <option value="media">Media</option>
+                                <option value="baja">Baja</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary" onclick="calcularSLA()">
+                            <i class="fas fa-calculator"></i> Calcular SLA
+                        </button>
+                        <div id="resultadoSLA" class="resultado-box"></div>
+                    </div>
+
+                    <div class="calculator-card">
+                        <h3><i class="fas fa-chart-line"></i> Métricas de Desempeño</h3>
+                        <div class="form-group">
+                            <label for="tiempoResolucion">Tiempo de Resolución (horas)</label>
+                            <input type="number" id="tiempoResolucion" class="form-control" placeholder="Ej: 24" step="0.1">
+                        </div>
+                        <div class="form-group">
+                            <label for="tiempoObjetivo">Tiempo Objetivo SLA (horas)</label>
+                            <input type="number" id="tiempoObjetivo" class="form-control" placeholder="Ej: 24" step="0.1">
+                        </div>
+                        <button class="btn btn-primary" onclick="calcularMetricas()">
+                            <i class="fas fa-chart-bar"></i> Calcular Métricas
+                        </button>
+                        <div id="resultadoMetricas" class="resultado-box"></div>
+                    </div>
+
+                    <div class="calculator-card">
+                        <h3><i class="fas fa-table"></i> Matriz de Priorización</h3>
+                        <div class="table-container">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Impacto</th>
+                                        <th>Urgencia</th>
+                                        <th>Prioridad</th>
+                                        <th>SLA</th>
+                                        <th>Ejemplo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Crítico (clase activa)</td>
+                                        <td>Alta</td>
+                                        <td><span class="badge badge-danger">Crítica</span></td>
+                                        <td>1 hora</td>
+                                        <td>Profesor no puede acceder a LMS durante clase</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alto (profesor)</td>
+                                        <td>Alta</td>
+                                        <td><span class="badge badge-warning">Alta</span></td>
+                                        <td>4 horas</td>
+                                        <td>Profesor no puede acceder a correo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Medio (estudiante)</td>
+                                        <td>Alta</td>
+                                        <td><span class="badge badge-info">Media</span></td>
+                                        <td>24 horas</td>
+                                        <td>Estudiante no puede acceder a LMS</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bajo (administrativo)</td>
+                                        <td>Baja</td>
+                                        <td><span class="badge badge-secondary">Baja</span></td>
+                                        <td>48 horas</td>
+                                        <td>Problema con impresora</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exportar Tab -->
+            <div class="tab-content" id="exportar">
+                <div class="section-header">
+                    <h2><i class="fas fa-download"></i> Exportar Documento</h2>
+                    <p>Genera un documento con toda la información de tu proyecto</p>
+                </div>
+
+                <div class="export-section">
+                    <div class="export-card">
+                        <h3><i class="fas fa-file-alt"></i> Opciones de Exportación</h3>
+                        <div class="form-group">
+                            <label for="formatoExportacion">Formato de Exportación</label>
+                            <select id="formatoExportacion" class="form-control">
+                                <option value="markdown">Markdown (.md)</option>
+                                <option value="texto">Texto Plano (.txt)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" id="incluirContexto" checked> Incluir Contexto
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" id="incluirProcesos" checked> Incluir Procesos ITIL
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" id="incluirFlujo" checked> Incluir Flujo de Actividades
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" id="incluirMetricas" checked> Incluir Métricas y SLA
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-large" onclick="exportarDocumento()">
+                            <i class="fas fa-download"></i> Exportar Documento
+                        </button>
+                    </div>
+
+                    <div class="export-card">
+                        <h3><i class="fas fa-info-circle"></i> Información del Proyecto</h3>
+                        <div id="infoProyecto" class="info-box">
+                            <p><strong>Estado:</strong> <span id="estadoProyecto">No iniciado</span></p>
+                            <p><strong>Procesos completados:</strong> <span id="procesosCompletados">0/15</span></p>
+                            <p><strong>Fases del flujo:</strong> <span id="fasesFlujo">0/10</span></p>
+                            <p><strong>Última actualización:</strong> <span id="ultimaActualizacion">-</span></p>
+                        </div>
+                        <button class="btn btn-secondary" onclick="limpiarDatos()">
+                            <i class="fas fa-trash"></i> Limpiar Todos los Datos
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal para Editar Proceso/Fase -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Editar</h3>
+                <button class="modal-close" onclick="cerrarModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Contenido dinámico -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/procesos.js"></script>
+    <script src="js/flujo.js"></script>
+    <script src="js/calculadora.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
+
