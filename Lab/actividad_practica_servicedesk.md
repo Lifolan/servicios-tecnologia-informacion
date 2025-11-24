@@ -1,8 +1,13 @@
-# EJemplo Laboratorio: Implementación de Service Desk y Gestión de Incidencias en una Institución Educativa
+## Servicios de Tecnología de la Información
+
+# Alumno: Libardo Alexander Forero Lancheros C.C 79.168.105 de Ubaté
+
+# Explicación de la solución del Laboratorio: Implementación de Service Desk y Gestión de Incidencias en un Centro Médico Deportivo
+Este documento explica como se desarrolló la solución para el laboratorio propuesto, es una hoja de ruta.
 
 ## Descripción
 
-Este laboratorio se centra en la implementación de un Service Desk y la gestión de incidencias basada en ITIL en una institución educativa. Para ello, se hará uso de lo visto en clase sobre ITIL, siendo aplicado con niveles de madurez (esto se detallará más durante el laboratorio). Y como apoyo, se un ejemplo de similares características a la actividad que habrá que realizar. La finalidad es manejar el uso de la implantación de servicios TI en casos reales del sector educativo.
+Este laboratorio se centra en la implementación de un Service Desk y la gestión de incidencias basada en ITIL en un centro médico deportivo(Gimnasio). Para ello, se hará uso de lo visto en clase sobre ITIL, siendo aplicado con niveles de madurez (esto se detallará más durante el laboratorio). Y como apoyo, se un ejemplo de similares características a la actividad que habrá que realizar. La finalidad es manejar el uso de la implantación de servicios TI en casos reales del sector salud y deporte.
 
 ## Desarrollo
 
@@ -17,7 +22,7 @@ Usuario → Service Desk → Registro → Clasificación → Priorización →
 Asignación → Investigación → Resolución → Cierre → Feedback
 ```
 
-Siguiendo este ejemplo, la actividad en concreto, será definir la secuencia de procesos para el flujo de gestión de incidencias en una institución educativa, teniendo en cuenta el nivel de madurez presentado en la Tabla 2 (ver Tabla 3 con un ejemplo de aplicación de cómo se alteran los procesos por el nivel de madurez de los mismos).
+Siguiendo este ejemplo, la actividad en concreto, será definir la secuencia de procesos para el flujo de gestión de incidencias en un centro médico deportivo(Gimnasio), teniendo en cuenta el nivel de madurez presentado en la Tabla 2 (ver Tabla 3 con un ejemplo de aplicación de cómo se alteran los procesos por el nivel de madurez de los mismos).
 
 **Tabla 2. Procesos ITIL y niveles de madurez**
 
@@ -30,16 +35,16 @@ Siguiendo este ejemplo, la actividad en concreto, será definir la secuencia de 
 | 4 - Gestionado | Proceso medido | Métricas y KPIs implementados |
 | 5 - Optimizado | Proceso mejorado | Mejora continua y optimización |
 
-Bajo el contexto del presente ejercicio práctico, se utilizará una institución educativa(creada con datos de ejemplo), para así poder ir indicando las actividades a realizar en los procesos para el flujo de gestión de incidencias en un ejemplo mas real. Por ejemplo, suponiendo que se trata de una universidad que necesita implementar un Service Desk para gestionar las incidencias de TI de estudiantes, profesores y personal administrativo. En este caso, habría que considerar las estrategias y procesos que se llevarían a cabo para:
+Bajo el contexto del presente ejercicio práctico, se utilizará un centro médico deportivo(creado con datos de ejemplo), para así poder ir indicando las actividades a realizar en los procesos para el flujo de gestión de incidencias en un ejemplo mas real. Por ejemplo, suponiendo que se trata de un gimnasio que necesita implementar un Service Desk para gestionar las incidencias de TI de estudiante usuarios o afiliados, entrenadores y personal administrativo. En este caso, habría que considerar las estrategias y procesos que se llevarían a cabo para:
 
-- Registrar incidencias de diferentes tipos (acceso a plataformas educativas, problemas de red, soporte a equipos de laboratorio, etc.)
-- Clasificar y priorizar según impacto (clases presenciales vs. trabajo administrativo)
+- Registrar incidencias de diferentes tipos (acceso a plataformas de entrenamiento y administrativas, problemas de red, soporte a equipos de estado de saludo y entremamiento, etc.)
+- Clasificar y priorizar según impacto (los entremamientos personlizados y de acompañamiento(de piso) vs. trabajo administrativo)
 - Asignar y escalar a equipos especializados
-- Gestionar SLA según el tipo de usuario (estudiante, profesor, administrativo)
+- Gestionar SLA según el tipo de usuario (afiliado, entrenador, administrativo)
 - Implementar un portal de autoservicio para consultas comunes
 - Establecer métricas de desempeño
 
-Todo esto se hará basándose en los niveles de madurez presentados. Esto es solo un ejemplo, ustedes deben seleccionar o crear una PYME  de ejemplo en concreto para llevar a cabo el análisis y explicación de las actividades en cada proceso identificado.
+Todo esto se hará basándose en los niveles de madurez presentados. Se toma ejemplo la institución educativa aportada por el profesor, Se crea una PYME (Centro Médico Deportivo) de ejemplo en concreto para llevar a cabo el análisis y explicación de las actividades en cada proceso identificado.
 
 **Tabla 3. Niveles de madurez aplicados a Service Desk**
 
@@ -72,7 +77,7 @@ En un nivel 4 (Gestionado), el proceso incluiría:
 
 ## Objetivos
 
-Se pretende que el alumno consolide lo aprendido en la asignatura mediante la resolución de un supuesto de implantación de Service Desk y gestión de incidencias aplicado a una institución educativa. Considerar los aspectos vistos en clase sobre ITIL, especialmente:
+Se pretende como alumno consolidar lo aprendido en la asignatura mediante la resolución de un supuesto de implantación de Service Desk y gestión de incidencias aplicado a un centro médico deportivo(Gimnasio).Se consideran los aspectos vistos en clase sobre ITIL, especialmente:
 
 - Procesos de la fase de Operación del Servicio
 - Service Desk y sus tipos
@@ -82,7 +87,7 @@ Se pretende que el alumno consolide lo aprendido en la asignatura mediante la re
 
 ## Tabla de Procesos ITIL
 
-Completa la siguiente tabla identificando los procesos ITIL relevantes para el flujo de gestión de incidencias en la institución educativa seleccionada:
+Completa la siguiente tabla identificando los procesos ITIL relevantes para el flujo de gestión de incidencias en el centro médico deportivo(Gimnasio) seleccionado:
 
 | Procesos de ITIL | Actividad que realiza dicho proceso | Nivel de Madurez Inicial | Nivel de Madurez Objetivo | Actividades específicas para la institución |
 |------------------|--------------------------------------|--------------------------|---------------------------|---------------------------------------------|
@@ -107,13 +112,13 @@ Completa la siguiente tabla identificando los procesos ITIL relevantes para el f
 1. **Service Desk** - Punto único de contacto
 2. **Gestión de Incidencias** - Registro y resolución de incidencias
 3. **Gestión de Problemas** - Análisis de causas raíz
-4. **Gestión de Acceso** - Control de acceso a sistemas educativos
+4. **Gestión de Acceso** - Control de acceso a servicios en línea o por aplicación del gimnasio
 5. **Petición de Servicios** - Solicitudes de servicios estándar
 6. **Gestión de Eventos** - Monitoreo de infraestructura
-7. **Gestión de Configuración** - Inventario de activos educativos
+7. **Gestión de Configuración** - Inventario de activos físicos del gimnasio(Edificios,máquinas de pesas, muebles y equipos de oficina)
 8. **Gestión de Niveles de Servicio** - Definición de SLA por tipo de usuario
 9. **Gestión del Conocimiento** - Base de conocimiento para consultas frecuentes
-10. **Gestión de Cambios** - Cambios en plataformas educativas
+10. **Gestión de Cambios** - Cambios en plataformas de rutinas para usuarios o afiliados
 
 ## Tabla de Flujo de Actividades
 
@@ -134,30 +139,30 @@ Define el flujo completo de actividades desde que un usuario reporta una inciden
 
 ## Escenario de Ejemplo
 
-**Institución:** Universidad Tecnológica FloridablancaTEC  
-**Contexto:** Universidad con 8,000 estudiantes, 500 profesores y 200 empleados administrativos  
+**Institución:** Centro Médico Deportivo Cuerpo Fuerte e Inteligente CFI  
+**Contexto:** Gimnasio con 28.000, 1000 entrenadores y 280 empleados administrativos  
 **Situación actual:**  
 - No existe Service Desk formal
 - Las incidencias se reportan por email o WhatsApp
 - No hay seguimiento ni métricas
 - Tiempo promedio de resolución: 3-5 días
-- Alta insatisfacción de usuarios
+- Alta insatisfacción de usuarios o afiliados
 
 **Objetivo:** Implementar un Service Desk virtual con gestión de incidencias basado en ITIL, alcanzando nivel de madurez 3 (Definido) en los primeros 6 meses.
 
 **Tipos de incidencias comunes:**
 - Problemas de acceso a plataforma LMS (Learning Management System)
-- Incidencias de red en laboratorios de informática
-- Problemas con proyección en aulas
+- Incidencias de red en sedes a nivel Colombia
+- Problemas con la aplicación del gimnasio en el celular y/o en la tablet
 - Solicitudes de acceso a sistemas administrativos
-- Problemas con impresoras en biblioteca
-- Soporte a equipos de videoconferencia
+- Problemas con impresoras en la recepción en cada una de las sedes
+- Soporte a equipos de oficina, torniquete de acceso a las sedes y máquinas con IoT
 
 **SLA propuestos:**
-- Estudiantes: Resolución en 24 horas (horario laboral)
-- Profesores: Resolución en 4 horas (horario laboral)
+- Afiliados o usuarios: Resolución en 24 horas (horario laboral)
+- Entrenadores: Resolución en 4 horas (horario laboral)
 - Administrativos: Resolución en 2 horas (horario laboral)
-- Críticas (clases activas): Resolución en 1 hora
+- Críticas (en entrenamiento de usuarios directamente): Resolución en 1 hora
 
 ## Rúbrica
 
@@ -166,7 +171,7 @@ A continuación, se indican los criterios que se consideran para alcanzar la pun
 | Criterio | Descripción | Puntuación máxima (puntos) | Peso % |
 |----------|-------------|---------------------------|--------|
 | **Criterio 1** | Descripción de las actividades a realizar en los procesos seleccionados | 5,5 | 55% |
-| **Criterio 2** | Explicación detallada de las decisiones de las actividades en base al ejemplo de la institución educativa | 2,5 | 25% |
+| **Criterio 2** | Explicación detallada de las decisiones de las actividades en base al ejemplo del centro médico deportivo | 2,5 | 25% |
 | **Criterio 3** | Memoria explicativa completa y bien estructurada | 2 | 20% |
 | **TOTAL** | | **10** | **100%** |
 
@@ -192,9 +197,9 @@ A continuación, se indican los criterios que se consideran para alcanzar la pun
 
 Se deberá entregar un documento (formato PDF o Word), conteniendo:
 
-1. **Portada** con datos del alumno y la institución educativa seleccionada
+1. **Portada** con datos del alumno y el centro médico deportivo seleccionado
 2. **Índice** con paginación
-3. **Introducción** explicando el contexto de la institución educativa
+3. **Introducción** explicando el contexto del centro médico deportivo
 4. **Tabla de Procesos ITIL** completada con todos los procesos relevantes
 5. **Tabla de Flujo de Actividades** con el proceso completo de gestión de incidencias
 6. **Explicación detallada** de cómo se aborda el problema, incluyendo:
@@ -226,8 +231,8 @@ El documento deberá contener:
 
 ## Notas adicionales
 
-- El contexto de la institución educativa puede ser real o ficticio, pero debe ser realista
-- Se recomienda investigar sobre casos reales de implementación de Service Desk en instituciones educativas
+- El contexto del centro médico deportivo puede ser real o ficticio, pero debe ser realista
+- Se recomienda investigar sobre casos reales de implementación de Service Desk en centros médicos deórtivos
 - Considerar las particularidades del sector educativo (horarios, tipos de usuarios, estacionalidad)
 - Pueden incluirse diagramas o gráficos para ilustrar el flujo de procesos
 - Se valorará positivamente la creatividad en la propuesta de solución
